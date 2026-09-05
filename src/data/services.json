@@ -1,0 +1,1703 @@
+[
+  {
+    "category": "Sheet Metal & Fabrication",
+    "services": [
+      {
+        "id": 1,
+        "title": "Heavy Fabrication",
+        "slug": "heavy-fabrication",
+        "description": "High-quality structural and industrial fabrication services.",
+        "heroImage": "/images/heavyfab-main.jfif",
+        "images": [
+          "/images/heavyfab-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "Structural Fabrication",
+            "slug": "structural-fabrication",
+            "images": [
+              "/images/Structural-Fabrication-1.webp",
+              "/images/Structural-Fabrication-2.jfif"
+            ],
+            "description": "Heavy-duty structural fabrication for industrial applications."
+          },
+          {
+            "title": "Machine Frames",
+            "slug": "machine-frames",
+            "images": [
+              "/images/machineframe-main.jfif",
+              "/images/machineframe-1.jfif",
+              "/images/machineframe-2.jfif"
+            ],
+            "description": "Robust and precision-built machine frames."
+          },
+          {
+            "title": "Skids & Base Frames",
+            "slug": "skids-base-frames",
+            "images": [
+              "/images/skidframe-main.jpeg"
+            ],
+            "description": "Custom skids and base frames for equipment support."
+          },
+          {
+            "title": "Industrial Platforms",
+            "slug": "industrial-platforms",
+            "images": [
+              "/images/industrialplatform-main.jfif"
+            ],
+            "description": "Safe and durable platforms for industrial use."
+          },
+          {
+            "title": "Welded Assemblies",
+            "slug": "welded-assemblies",
+            "images": [
+              "/images/weldedassemblies-main.jfif",
+              "/images/weldedassemblies-1.jfif"
+            ],
+            "description": "High-quality welded assemblies for critical structures."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Precision Sheet Metal",
+        "slug": "precision-sheet-metal",
+        "description": "Advanced sheet metal processing with high precision.",
+        "heroImage": "/images/sheetmetal-hero.jpg",
+        "images": [
+          "/images/precision-sheet-metal-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "Laser Cutting",
+            "slug": "laser-cutting",
+            "images": [
+              "/images/lasercutting-main.jfif",
+              "/images/lasercutting-1.jfif"
+            ],
+            "description": "High-precision laser cutting for complex and detailed sheet metal components."
+          },
+          {
+            "title": "CNC Bending",
+            "slug": "cnc-bending",
+            "images": [
+              "/images/cncbending-main.jfif",
+              "/images/cncbending-1.jfif"
+            ],
+            "description": "Accurate CNC bending for consistent and high-quality metal forming."
+          },
+          {
+            "title": "CNC Punching",
+            "slug": "cnc-punching",
+            "images": [
+              "/images/CNCPunch-main.jfif"
+            ],
+            "description": "Efficient CNC punching for repetitive and precision sheet metal operations."
+          },
+          {
+            "title": "TIG/MIG Welding",
+            "slug": "tig-mig-welding",
+            "images": [
+              "/images/tig-main.jfif",
+              "/images/tig-1.jfif"
+            ],
+            "description": "Strong and reliable welding using TIG and MIG techniques."
+          },
+          {
+            "title": "Sheet Metal Enclosures",
+            "slug": "sheet-metal-enclosures",
+            "images": [
+              "/images/sheetmetal-main.jfif",
+              "/images/sheetmetal-1.jfif"
+            ],
+            "description": "Custom-built enclosures for electrical and industrial applications."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Modular Container Manufacturing",
+        "slug": "modular-container-manufacturing",
+        "description": "Custom-built modular containers for industrial use.",
+        "heroImage": "/images/container-hero.jpg",
+        "images": [
+          "/images/modular-container-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "Equipment Containers",
+            "slug": "equipment-containers",
+            "images": [
+              "/images/EquipmentContainers-main.jfif",
+              "/images/EquipmentContainers-1.jfif"
+            ],
+            "description": "Robust containers designed to house and protect industrial equipment."
+          },
+          {
+            "title": "Control Room Containers",
+            "slug": "control-room-containers",
+            "images": [
+              "/images/ControlRoomContainers-main.jfif",
+              "/images/ControlRoomContainers-1.jfif"
+            ],
+            "description": "Fully equipped control room containers for safe and efficient operations."
+          },
+          {
+            "title": "Acoustic Enclosures",
+            "slug": "acoustic-enclosures",
+            "images": [
+              "/images/AcousticEnclosures-main.jfif"
+            ],
+            "description": "Noise-reducing enclosures for generators and industrial machinery."
+          },
+          {
+            "title": "Defence Containers",
+            "slug": "defence-containers",
+            "images": [
+              "/images/defencecontainer-main.jpeg"
+            ],
+            "description": "Specialized containers built for defence and rugged environments."
+          },
+          {
+            "title": "Customized Portable Cabins",
+            "slug": "customized-portable-cabins",
+            "images": [
+              "/images/CustomizedPortableCabins-main.jpeg",
+              "/images/CustomizedPortableCabins-1.png"
+            ],
+            "description": "Tailor-made portable cabins for offices, storage, and site use."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Machining & CNC Manufacturing",
+        "slug": "machining-cnc-manufacturing",
+        "description": "Precision machining and CNC-based manufacturing solutions.",
+        "heroImage": "/images/cnc-hero.jpg",
+        "images": [
+          "/images/machining-cnc-manufacturing-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "VMC Machining",
+            "slug": "vmc-machining",
+            "images": [
+              "/images/vncmachinemain.jfif"
+            ],
+            "description": "High-precision Vertical Machining Center operations for complex components."
+          },
+          {
+            "title": "CNC Turning",
+            "slug": "cnc-turning",
+            "images": [
+              "/images/CNCTurning-main.jfif"
+            ],
+            "description": "Accurate CNC turning services for cylindrical and rotational parts."
+          },
+          {
+            "title": "Precision Components",
+            "slug": "precision-components",
+            "images": [
+              "/images/PrecisionComponents-main.jfif"
+            ],
+            "description": "Manufacturing of high-accuracy components for industrial applications."
+          },
+          {
+            "title": "Prototype Development",
+            "slug": "prototype-development",
+            "images": [
+              "/images/PrototypeDevelopment-main.jfif"
+            ],
+            "description": "Rapid prototyping solutions to validate designs before production."
+          },
+          {
+            "title": "Batch Production",
+            "slug": "batch-production",
+            "images": [
+              "/images/BatchProduction-main.jfif"
+            ],
+            "description": "Efficient batch production with consistent quality and precision."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Surface Treatment & Finishing",
+        "slug": "surface-treatment-finishing",
+        "description": "Surface finishing solutions for durability and aesthetics.",
+        "heroImage": "/images/surface-hero.jpg",
+        "images": [
+          "/images/surface-treatment-finishing-main.jpg"
+        ],
+        "items": [
+          {
+            "title": "Powder Coating",
+            "slug": "powder-coating",
+            "images": [
+              "/images/PowderCoating-main.jfif",
+              "/images/PowderCoating-1.jfif"
+            ],
+            "description": "Durable and high-quality powder coating for long-lasting surface protection."
+          },
+          {
+            "title": "Industrial Painting",
+            "slug": "industrial-painting",
+            "images": [
+              "/images/IndustrialPainting-main.jpg"
+            ],
+            "description": "Professional industrial painting solutions for enhanced durability and finish."
+          },
+          {
+            "title": "Sand Blasting",
+            "slug": "sand-blasting",
+            "images": [
+              "/images/sandblasting-main.jfif",
+              "/images/sandblasting-1.jfif"
+            ],
+            "description": "Surface cleaning and preparation using high-speed sand blasting techniques."
+          },
+          {
+            "title": "Shot Blasting",
+            "slug": "shot-blasting",
+            "images": [
+              "/images/sandblasting-1.jfif",
+              "/images/sandblasting-main.jfif"
+            ],
+            "description": "Efficient shot blasting for surface strengthening and cleaning."
+          },
+          {
+            "title": "Anti-Corrosion Coating",
+            "slug": "anti-corrosion-coating",
+            "images": [
+              "/images/anti-corrosion-coating-main.jfif"
+            ],
+            "description": "Protective coatings to prevent rust and corrosion in harsh environments."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Defence Manufacturing",
+        "slug": "defence-manufacturing",
+        "description": "Specialized fabrication for defence and mission-critical applications.",
+        "heroImage": "/images/defence-hero.jpg",
+        "images": [
+          "/images/defence-manufacturing-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "Defence Fabrication Assemblies",
+            "slug": "defence-fabrication-assemblies",
+            "images": [
+              "/images/defence-fabrication-assemblies-main.jfif"
+            ],
+            "description": "Specialized fabrication assemblies designed to meet defence-grade specifications."
+          },
+          {
+            "title": "Ruggedized Structures",
+            "slug": "ruggedized-structures",
+            "images": [
+              "/images/ruggedized-structures-main.jfif"
+            ],
+            "description": "Durable and robust structures built to withstand extreme environments."
+          },
+          {
+            "title": "Mil-Spec Fabrication",
+            "slug": "mil-spec-fabrication",
+            "images": [
+              "/images/mil-spec-fabrication-main.jfif"
+            ],
+            "description": "Manufacturing following military specifications for reliability and safety."
+          },
+          {
+            "title": "Equipment Housings",
+            "slug": "equipment-housings",
+            "images": [
+              "/images/equipment-housings-main.jfif"
+            ],
+            "description": "Secure housings for sensitive equipment in industrial and defence applications."
+          },
+          {
+            "title": "Mission-Critical Parts",
+            "slug": "mission-critical-parts",
+            "images": [
+              "/images/mission-critical-parts-main.jfif"
+            ],
+            "description": "Precision components designed for high-stakes and mission-critical operations."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Engineering & Design",
+        "slug": "engineering-design",
+        "description": "Comprehensive engineering and design services.",
+        "heroImage": "/images/design-hero.jpg",
+        "images": [
+          "/images/engineering-design-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "CAD Design",
+            "slug": "cad-design",
+            "images": [
+              "/images/cad-design-main.jfif"
+            ],
+            "description": "Computer-aided design services for precise and efficient engineering models."
+          },
+          {
+            "title": "Production Drawings",
+            "slug": "production-drawings",
+            "images": [
+              "/images/production-drawings-main.jfif"
+            ],
+            "description": "Detailed production drawings to guide manufacturing and assembly processes."
+          },
+          {
+            "title": "Reverse Engineering",
+            "slug": "reverse-engineering",
+            "images": [
+              "/images/ReverseEngineering-main.jfif"
+            ],
+            "description": "Analyzing existing products to create improved or duplicate designs."
+          },
+          {
+            "title": "Design Optimization",
+            "slug": "design-optimization",
+            "images": [
+              "/images/production-drawings-main.jfif"
+            ],
+            "description": "Refining designs to maximize performance, cost-effectiveness, and manufacturability."
+          },
+          {
+            "title": "Value Engineering",
+            "slug": "value-engineering",
+            "images": [
+              "/images/ReverseEngineering-main.jfif"
+            ],
+            "description": "Systematic approach to improve product value by optimizing function and cost."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Industrial Products",
+        "slug": "industrial-products",
+        "description": "Manufacturing of industrial-grade products and systems.",
+        "heroImage": "/images/products-hero.jpg",
+        "images": [
+          "/images/industrial-products-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "Electrical Panels",
+            "slug": "electrical-panels",
+            "images": [
+              "/images/electrical-panels-main.jfif"
+            ],
+            "description": "High-quality electrical panels for industrial and commercial applications."
+          },
+          {
+            "title": "Control Cabinets",
+            "slug": "control-cabinets",
+            "images": [
+              "/images/control-cabinets-main.jfif"
+            ],
+            "description": "Durable control cabinets for housing electrical and automation equipment."
+          },
+          {
+            "title": "Industrial Racks",
+            "slug": "industrial-racks",
+            "images": [
+              "/images/industrial-racks-main.jfif"
+            ],
+            "description": "Robust storage racks designed for industrial use and heavy loads."
+          },
+          {
+            "title": "Machine Guards",
+            "slug": "machine-guards",
+            "images": [
+              "/images/machine-guards-main.jfif"
+            ],
+            "description": "Safety guards for machines to protect operators and ensure compliance."
+          },
+          {
+            "title": "Material Handling Structures",
+            "slug": "material-handling-structures",
+            "images": [
+              "/images/material-handling-structures-main.jfif"
+            ],
+            "description": "Structures designed to streamline material handling and industrial workflow."
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Quality & Testing",
+        "slug": "quality-testing",
+        "description": "Strict quality control and testing procedures.",
+        "heroImage": "/images/quality-hero.jpg",
+        "images": [
+          "/images/quality-testing-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "Quality Inspection",
+            "slug": "quality-inspection",
+            "images": [
+              "/images/quality-testing-main.jfif"
+            ],
+            "description": "Comprehensive inspection to ensure product quality meets industry standards."
+          },
+          {
+            "title": "Dimensional Inspection",
+            "slug": "dimensional-inspection",
+            "images": [
+              "/images/quality-testing-main.jfif"
+            ],
+            "description": "Precise measurement of components to verify dimensional accuracy."
+          },
+          {
+            "title": "Welding Inspection",
+            "slug": "welding-inspection",
+            "images": [
+              "/images/quality-testing-main.jfif"
+            ],
+            "description": "Checks weld integrity, strength, and compliance with specifications."
+          },
+          {
+            "title": "Material Traceability",
+            "slug": "material-traceability",
+            "images": [
+              "/images/quality-testing-main.jfif"
+            ],
+            "description": "Track materials from source to final product for quality assurance."
+          },
+          {
+            "title": "Documentation",
+            "slug": "documentation",
+            "images": [
+              "/images/quality-testing-main.jfif"
+            ],
+            "description": "Detailed reports and records for quality control and compliance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Institutional Furniture",
+    "services": [
+      {
+        "id": 1,
+        "title": "School Furniture",
+        "slug": "school-furniture",
+        "description": "Durable and ergonomic furniture solutions for schools, designed for comfort and safety.",
+        "heroImage": "/images/school-main.jfif",
+        "images": [
+          "/images/school-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "Student desks (single/double)",
+            "slug": "student-desks",
+            "images": [
+              "/images/studentdesk-main.jpeg",
+              "/images/schooldesk-1.jpeg"
+            ],
+            "description": "Ergonomic desks designed for individual or dual students."
+          },
+          {
+            "title": "Classroom benches",
+            "slug": "classroom-benches",
+            "images": [
+              "/images/schooldesk-main.jpeg",
+              "/images/schooldesk-1.jpeg"
+            ],
+            "description": "Durable benches suitable for classroom environments."
+          },
+          {
+            "title": "Teacher tables",
+            "slug": "teacher-tables",
+            "images": [
+              "/images/teachertable-main.jpeg"
+            ],
+            "description": "Spacious tables to meet teachers' daily needs."
+          },
+          {
+            "title": "Classroom chairs",
+            "slug": "classroom-chairs",
+            "images": [
+              "/images/classroomchair-main.jpeg",
+              "/images/classroomchair-1.jpeg",
+              "/images/classroomchair-2.jpeg"
+            ],
+            "description": "Comfortable chairs for students with ergonomic design."
+          },
+          {
+            "title": "Storage cupboards",
+            "slug": "storage-cupboards",
+            "images": [
+              "/images/storagecupboard-main.jpeg",
+              "/images/storagecupboard-1.jpeg",
+              "/images/storagecupboard-3.jpeg",
+              "/images/storagecupboard-4.jpeg",
+              "/images/storagecupboard-5.jpeg",
+              "/images/storagecupboard-6.jpeg"
+            ],
+            "description": "Secure cupboards for books, stationery, and equipment."
+          },
+          {
+            "title": "Library tables",
+            "slug": "library-tables",
+            "images": [
+              "/images/librarytable-main.jpg",
+              "/images/librarytable-1.jpg",
+              "/images/librarytable-2.jpg",
+              "/images/librarytable-3.jpg"
+            ],
+            "description": "Tables suitable for libraries, promoting study and collaboration."
+          },
+          {
+            "title": "Laboratory tables",
+            "slug": "laboratory-tables",
+              "heroImage": "/images/lab-main.jpg",
+            "images": [
+              "/images/lab-main.jpg",
+              "/images/lab-1.jpg"
+            ],
+            "description": "Chemical-resistant tables for lab work and experiments."
+          },
+          {
+            "title": "School lockers",
+            "slug": "school-lockers",
+            "images": [
+              "/images/storagecupboard-main.jpeg",
+              "/images/storagecupboard-1.jpeg",
+              "/images/storagecupboard-3.jpeg",
+              "/images/storagecupboard-4.jpeg",
+              "/images/storagecupboard-5.jpeg",
+              "/images/storagecupboard-6.jpeg"
+            ],
+            "description": "Sturdy lockers to store students' belongings safely."
+          },
+          {
+            "title": "Whiteboards & notice boards",
+            "slug": "whiteboards-noticeboards",
+            "images": [
+              "/images/whiteboard-main.jpg",
+              "/images/whiteboard-1.jpg",
+              "/images/whiteboard-2.jpg",
+              "/images/whiteboard-3.jpg",
+              "/images/whiteboard-4.jpg"
+            ],
+            "description": "High-quality boards for teaching and notices."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "College & University Furniture",
+        "slug": "college-university-furniture",
+        "description": "High-quality furniture for higher education institutions including lecture halls and labs.",
+        "heroImage": "/images/college-furniture-hero.jpg",
+        "images": [
+          "/images/hostel-furniture-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "Lecture hall desks",
+            "slug": "lecture-hall-desks",
+            "images": [
+              "/images/studentdesk-main.jpeg",
+              "/images/schooldesk-1.jpeg"
+            ],
+            "description": "Durable and ergonomic desks designed for lecture halls."
+          },
+          {
+            "title": "Auditorium seating",
+            "slug": "auditorium-seating",
+            "images": [
+              "/images/Auditorium-main.jfif",
+              "/images/Auditorium-1.jfif"
+            ],
+            "description": "Comfortable seating for large auditoriums and events."
+          },
+          {
+            "title": "Library furniture",
+            "slug": "library-furniture",
+            "images": [
+              "/images/libraryfurniture-main.jpg",
+              "/images/libraryfurniture-1.jpg",
+              "/images/libraryfurniture-2.jpg",
+              "/images/librarytable-3.jpg"
+            ],
+            "description": "Functional furniture designed for library environments."
+          },
+          {
+            "title": "Reading tables",
+            "slug": "reading-tables",
+            "images": [
+              "/images/librarytable-2.jpg",
+              "/images/librarytable-3.jpg"
+            ],
+            "description": "Spacious tables ideal for individual or group study."
+          },
+          {
+            "title": "Hostel furniture",
+            "slug": "hostel-furniture",
+              "heroImage": "/images/hostelfurniture-main.jfif",
+            "images": [
+              "/images/hostelfurniture-main.jfif"
+            ],
+            "description": "Space-saving and durable furniture for hostel rooms."
+          },
+          {
+            "title": "Study tables",
+            "slug": "study-tables",
+            "images": [
+              "/images/librarytable-2.jpg",
+              "/images/librarytable-3.jpg"
+            ],
+            "description": "Ergonomic tables designed for focused study sessions."
+          },
+          {
+            "title": "Bunk beds",
+            "slug": "bunk-beds",
+            "images": [
+              "/images/hostelfurniture-main.jfif",
+              "/images/beds-main.jpg",
+              "/images/beds-1.jpg",
+              "/images/beds-2.jpg",
+              "/images/beds-3.jpg",
+              "/images/beds-4.jpg"
+            ],
+            "description": "Safe and sturdy bunk beds for dormitories."
+          },
+          {
+            "title": "Laboratory workstations",
+            "slug": "laboratory-workstations",
+            "images": [
+              "/images/lab-main.jpg",
+              "/images/lab-1.jpg"
+            ],
+            "description": "Workstations built for laboratory experiments and research."
+          },
+          {
+            "title": "Research work tables",
+            "slug": "reasearch-work-tables",
+            "images": [
+              "/images/lab-main.jpg",
+              "/images/lab-1.jpg"
+            ],
+            "description": "Tables designed to support complex research and projects."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Office Furniture",
+        "slug": "office-furniture",
+        "description": "Professional office furniture for workspaces, designed for productivity and ergonomics.",
+        "heroImage": "/images/manager-main.jpg",
+        "images": [
+          "/images/officeworkstation-main.jpg"
+        ],
+        "items": [
+          {
+            "title": "Office workstations",
+            "slug": "office-workstations",
+            "images": [
+              "/images/officeworkstation-1.jpg",
+              "/images/officeworkstation-2.jpg",
+              "/images/officeworkstation-3.jpg",
+              "/images/officeworkstation-4.jpg",
+              "/images/officeworkstation-5.jpg",
+              "/images/officeworkstation-6.jpg",
+              "/images/officeworkstation-7.jpg",
+              "/images/officeworkstation-8.jpg",
+              "/images/officeworkstation-9.jpg"
+            ],
+            "description": "Ergonomic workstations for efficient office productivity."
+          },
+          {
+            "title": "Executive tables",
+            "slug": "executives-tables",
+            "images": [
+              "/images/executive-main.jpg",
+              "/images/executive-1.jpg",
+              "/images/executive-2.jpg",
+              "/images/executive-3.jpg",
+              "/images/executive-4.jpg"
+            ],
+            "description": "Stylish and functional tables for executive offices."
+          },
+          {
+            "title": "Manager desks",
+            "slug": "manager-desks",
+            "images": [
+              "/images/manager-main.jpg",
+              "/images/manager-1.jpg",
+              "/images/manager-2.jpg",
+              "/images/manager-3.jpg"
+            ],
+            "description": "Professional desks designed for managers."
+          },
+          {
+            "title": "Office chairs",
+            "slug": "office-chairs",
+            "images": [
+              "/images/classroomchair-main.jpeg",
+              "/images/classroomchair-1.jpeg",
+              "/images/classroomchair-2.jpeg"
+            ],
+            "description": "Comfortable and adjustable chairs for long working hours."
+          },
+          {
+            "title": "Conference tables",
+            "slug": "conference-tables",
+            "images": [
+              "/images/conference-main.jpg",
+              "/images/conference-1.jpg",
+              "/images/conference-2.jpg"
+            ],
+            "description": "Large tables ideal for meetings and collaborative discussions."
+          },
+          {
+            "title": "Meeting room furniture",
+            "slug": "meeting-room-furniture",
+            "images": [
+              "/images/conference-main.jpg",
+              "/images/conference-1.jpg",
+              "/images/conference-2.jpg"
+            ],
+            "description": "Complete furniture sets for meeting rooms and conference spaces."
+          },
+          {
+            "title": "Filing cabinets",
+            "slug": "filing-cabinets",
+            "images": [
+              "/images/fillingcabinet-main.jpeg",
+              "/images/fillingcabinet-1.jpeg",
+              "/images/fillingcabinet-2.jpeg",
+              "/images/fillingcabinet-3.jpeg",
+              "/images/fillingcabinet-4.jpeg",
+              "/images/fillingcabinet-5.jpeg",
+              "/images/fillingcabinet-6.jpeg",
+              "/images/fillingcabinet-7.jpeg",
+              "/images/fillingcabinet-8.jpeg",
+              "/images/fillingcabinet-9.jpeg"
+            ],
+            "description": "Secure storage solutions for documents and files."
+          },
+          {
+            "title": "Office storage units",
+            "slug": "office-storage-units",
+            "images": [
+              "/images/storagecupboard-main.jpeg",
+              "/images/storagecupboard-1.jpeg",
+              "/images/storagecupboard-3.jpeg",
+              "/images/storagecupboard-4.jpeg",
+              "/images/storagecupboard-5.jpeg",
+              "/images/storagecupboard-6.jpeg"
+            ],
+            "description": "Practical and modular storage units for offices."
+          },
+          {
+            "title": "Reception tables",
+            "slug": "reception-tables",
+            "images": [
+              "/images/receptiontable-main.jpeg",
+              "/images/receptiontable-1.jpeg"
+            ],
+            "description": "Welcoming and stylish tables for reception areas."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Laboratory Furniture",
+        "slug": "laboratory-furniture",
+        "description": "Safe and durable furniture for laboratories and research facilities.",
+        "heroImage": "/images/lab-furniture-hero.jpg",
+        "images": [
+          "/images/lab-main.jpg"
+        ],
+        "items": [
+          {
+            "title": "Lab tables",
+            "slug": "lab-tables",
+            "images": [
+              "/images/lab-main.jpg",
+              "/images/lab-1.jpg"
+            ],
+            "description": "Durable tables designed for laboratory experiments and work."
+          },
+          {
+            "title": "Chemical resistant tables",
+            "slug": "chemical-resistant-tables",
+            "images": [
+              "/images/lab-main.jpg",
+              "/images/lab-1.jpg"
+            ],
+            "description": "Tables built with materials resistant to chemical exposure."
+          },
+          {
+            "title": "Fume hood structures",
+            "slug": "fume-hood-tables",
+            "images": [
+              "/images/lab-main.jpg",
+              "/images/lab-1.jpg"
+            ],
+            "description": "Safety structures to handle hazardous fumes in labs."
+          },
+          {
+            "title": "Instrument tables",
+            "slug": "instrument-tables",
+            "images": [
+              "/images/lab-main.jpg",
+              "/images/lab-1.jpg"
+            ],
+            "description": "Stable and precise tables for laboratory instruments."
+          },
+          {
+            "title": "Lab storage cabinets",
+            "slug": "lab-storage-cabinets",
+            "images": [
+              "/images/storagecupboard-main.jpeg",
+              "/images/storagecupboard-1.jpeg",
+              "/images/storagecupboard-3.jpeg",
+              "/images/storagecupboard-4.jpeg",
+              "/images/storagecupboard-5.jpeg",
+              "/images/storagecupboard-6.jpeg"
+            ],
+            "description": "Secure storage for lab equipment and chemicals."
+          },
+          {
+            "title": "Testing workstations",
+            "slug": "testing-workstations",
+            "images": [
+              "/images/lab-main.jpg",
+              "/images/lab-1.jpg"
+            ],
+            "description": "Specialized workstations for testing and quality checks."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Hostel & Dormitory Furniture",
+        "slug": "hostel-dormitory-furniture",
+        "description": "Functional and space-saving furniture solutions for hostels and dormitories.",
+        "heroImage": "/images/hostel-furniture-hero.jpg",
+        "images": [
+          "/images/hostelfurniture-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "Steel beds",
+            "slug": "steel-beds",
+            "images": [
+              "/images/steelbeds-main.jpeg",
+              "/images/steelbeds-1.jpeg"
+            ],
+            "description": "Durable and sturdy steel beds suitable for hostel rooms."
+          },
+          {
+            "title": "Bunk beds",
+            "slug": "bunk-beds",
+            "images": [
+              "/images/hostelfurniture-main.jfif",
+              "/images/beds-main.jpg",
+              "/images/beds-1.jpg",
+              "/images/beds-2.jpg",
+              "/images/beds-3.jpg",
+              "/images/beds-4.jpg"
+            ],
+            "description": "Space-saving bunk beds for multiple occupants."
+          },
+          {
+            "title": "Wardrobes",
+            "slug": "wardrobes",
+            "images": [
+              "/images/storagecupboard-main.jpeg",
+              "/images/storagecupboard-1.jpeg",
+              "/images/storagecupboard-3.jpeg",
+              "/images/storagecupboard-4.jpeg",
+              "/images/storagecupboard-5.jpeg",
+              "/images/storagecupboard-6.jpeg"
+            ],
+            "description": "Functional storage wardrobes for personal belongings."
+          },
+          {
+            "title": "Study tables",
+            "slug": "study-tables",
+            "images": [
+              "/images/librarytable-2.jpg",
+              "/images/librarytable-3.jpg"
+            ],
+            "description": "Ergonomic study tables for student use."
+          },
+          {
+            "title": "Chairs",
+            "slug": "chairs",
+            "images": [
+              "/images/classroomchair-main.jpeg",
+              "/images/classroomchair-1.jpeg",
+              "/images/classroomchair-2.jpeg"
+            ],
+            "description": "Comfortable chairs for students and hostel residents."
+          },
+          {
+            "title": "Storage racks",
+            "slug": "storage-racks",
+            "images": [
+              "/images/storagecupboard-main.jpeg",
+              "/images/storagecupboard-1.jpeg",
+              "/images/storagecupboard-3.jpeg",
+              "/images/storagecupboard-4.jpeg",
+              "/images/storagecupboard-5.jpeg",
+              "/images/storagecupboard-6.jpeg"
+            ],
+            "description": "Multi-purpose storage racks for hostel organization."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Custom Institutional Furniture",
+        "slug": "custom-institutional-furniture",
+        "description": "Tailor-made furniture solutions to meet specific institutional requirements.",
+        "heroImage": "/images/Auditorium-main.jfif",
+        "images": [
+          "/images/fillingcabinet-main.jpeg",
+          "/images/storagecupboard-6.jpeg"
+        ],
+        "items": [
+          {
+            "title": "Metal furniture",
+            "slug": "metal-furniture",
+            "images": [
+              "/images/steelbeds-main.jpeg",
+              "/images/steelbeds-1.jpeg"
+            ],
+            "description": "Durable and long-lasting metal furniture for institutional use."
+          },
+          {
+            "title": "Industrial furniture",
+            "slug": "industrial-furniture",
+            "images": [
+              "/images/fillingcabinet-main.jpeg",
+              "/images/storagecupboard-6.jpeg"
+            ],
+            "description": "Heavy-duty furniture suitable for industrial environments."
+          },
+          {
+            "title": "Custom fabricated desks",
+            "slug": "custom-fabricated-desk",
+            "images": [
+              "/images/studentdesk-main.jpeg",
+              "/images/schooldesk-1.jpeg"
+            ],
+            "description": "Tailor-made desks to meet specific institutional requirements."
+          },
+          {
+            "title": "Modular furniture",
+            "slug": "modular-furniture",
+            "images": [
+              "/images/studentdesk-main.jpeg",
+              "/images/schooldesk-1.jpeg"
+            ],
+            "description": "Flexible modular furniture solutions for different layouts."
+          },
+          {
+            "title": "Heavy duty racks",
+            "slug": "heavy-duty-racks",
+            "images": [
+              "/images/librarytable-main.jpg",
+              "/images/librarytable-1.jpg",
+              "/images/librarytable-2.jpg",
+              "/images/librarytable-3.jpg"
+            ],
+            "description": "Sturdy storage racks capable of handling heavy loads."
+          },
+          {
+            "title": "Special project furniture",
+            "slug": "special-project-furniture",
+            "images": [
+              "/images/studentdesk-main.jpeg",
+              "/images/librarytable-1.jpg"
+            ],
+            "description": "Custom furniture designed for special institutional projects."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Industrial & Training Institute Furniture",
+        "slug": "industrial-training-institute-furniture",
+        "description": "Robust furniture for industrial training institutes and vocational centers.",
+        "heroImage": "/images/industrial-furniture-hero.jpg",
+        "images": [
+          "/images/industrial1.jpg",
+          "/images/industrial2.jpg",
+          "/images/industrial3.jpg"
+        ],
+        "items": [
+          {
+            "title": "Workshop tables",
+            "slug": "workshop-tables",
+            "images": [
+              "/images/contactbg.jpg",
+              "/images/contactbg.jpg"
+            ],
+            "description": "Robust tables designed for hands-on training workshops."
+          },
+          {
+            "title": "Training desks",
+            "slug": "training-desks",
+            "images": [
+              "/images/contactbg.jpg",
+              "/images/contactbg.jpg"
+            ],
+            "description": "Ergonomic desks suitable for classroom and training environments."
+          },
+          {
+            "title": "Tool storage cabinets",
+            "slug": "tool-storage-cabinets",
+            "images": [
+              "/images/storagecupboard-main.jpeg",
+              "/images/storagecupboard-1.jpeg",
+              "/images/storagecupboard-3.jpeg",
+              "/images/storagecupboard-4.jpeg",
+              "/images/storagecupboard-5.jpeg",
+              "/images/storagecupboard-6.jpeg"
+            ],
+            "description": "Durable cabinets to store tools and equipment safely."
+          },
+          {
+            "title": "Industrial chairs",
+            "slug": "industrial-chairs",
+            "images": [
+              "/images/classroomchair-main.jpeg",
+              "/images/classroomchair-1.jpeg",
+              "/images/classroomchair-2.jpeg"
+            ],
+            "description": "Sturdy seating designed for industrial and vocational spaces."
+          },
+          {
+            "title": "Machine operator tables",
+            "slug": "machine-operator-tables",
+            "images": [
+              "/images/contactbg.jpg",
+              "/images/contactbg.jpg"
+            ],
+            "description": "Specialized tables to support machine operations safely and efficiently."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Shelters & Cabins",
+    "services": [
+      {
+        "id": 1,
+        "title": "Portable Office Cabins",
+        "slug": "portable-office-cabins",
+        "description": "Mobile and modular office cabins for on-site operations.",
+        "heroImage": "/images/portable-office-hero.jpg",
+        "images": [
+          "/images/ControlRoomContainers-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "Site office cabins",
+            "slug": "site-office-cabins",
+            "images": [
+              "/images/site-office-cabins-main.jfif",
+              "/images/site-office-cabins-1.jfif"
+            ],
+            "description": "Compact and mobile cabins designed for on-site project management."
+          },
+          {
+            "title": "Project office cabins",
+            "slug": "project-office-cabins",
+            "images": [
+              "/images/project-office-cabins-main.jpg",
+              "/images/project-office-cabins-1.jfif"
+            ],
+            "description": "Fully equipped cabins suitable for temporary project offices."
+          },
+          {
+            "title": "Supervisor cabins",
+            "slug": "supervisor-cabins",
+            "images": [
+              "/images/supervisorcabin-main.webp",
+              "/images/supervisorcabin-1.jpg"
+            ],
+            "description": "Small, secure cabins for supervisors to manage site operations."
+          },
+          {
+            "title": "Meeting room cabins",
+            "slug": "meeting-room-cabins",
+            "images": [
+              "/images/meeting-room-cabins-main.jfif",
+              "/images/meeting-room-cabins-1.jfif"
+            ],
+            "description": "Portable cabins set up for meetings and discussions on-site."
+          },
+          {
+            "title": "Portable admin cabins",
+            "slug": "portable-admin-cabins",
+            "images": [
+              "/images/protable-admin-cabin-main.webp",
+              "/images/protable-admin-cabin-1.jpeg"
+            ],
+            "description": "Flexible administrative cabins for temporary or mobile setups."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Security Cabins",
+        "slug": "security-cabins",
+        "description": "Robust and secure cabins for guards and checkpoints.",
+        "heroImage": "/images/security-cabins-hero.jpg",
+        "images": [
+          "/images/security-cabin-main.jpeg"
+        ],
+        "items": [
+          {
+            "title": "Gate security cabins",
+            "slug": "gate-security-cabins",
+            "images": [
+              "/images/gate-security-cabins-main.webp",
+              "/images/gate-security-cabin-1.png"
+            ],
+            "description": "Robust cabins placed at entry gates for security personnel."
+          },
+          {
+            "title": "Watchman cabins",
+            "slug": "watchman-cabins",
+            "images": [
+              "/images/watchman-cabin-main.jpg",
+              "/images/watchman-cabin-1.jpg"
+            ],
+            "description": "Compact cabins for watchmen to monitor premises."
+          },
+          {
+            "title": "Portable guard rooms",
+            "slug": "portable-guard-rooms",
+            "images": [
+              "/images/portable-guard-room-main.jfif",
+              "/images/portable-guard-room-1.jfif"
+            ],
+            "description": "Mobile guard rooms for flexible site security solutions."
+          },
+          {
+            "title": "Entry control cabins",
+            "slug": "entry-control-cabins",
+            "images": [
+              "/images/entry-control-cabins-main.jfif"
+            ],
+            "description": "Cabins equipped for entry and access control management."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Accommodation Cabins",
+        "slug": "accommodation-cabins",
+        "description": "Temporary or permanent modular living spaces for personnel.",
+        "heroImage": "/images/accommodation-hero.jpg",
+        "images": [
+          "/images/accommodation-cabins-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "Staff accommodation cabins",
+            "slug": "staff-accommodation-cabins",
+            "images": [
+              "/images/staff-portable-cabin-main.jpg",
+              "/images/staff-portable-cabin-1.jfif"
+            ],
+            "description": "Modular cabins designed to house staff comfortably on-site."
+          },
+          {
+            "title": "Labour colonies",
+            "slug": "labour-colonies",
+            "images": [
+              "/images/labour-colonies-main.jfif",
+              "/images/labour-colonies-1.jfif"
+            ],
+            "description": "Organized living units for laborers with essential facilities."
+          },
+          {
+            "title": "Bunkhouse cabins",
+            "slug": "bunkhouse-cabins",
+            "images": [
+              "/images/bunkimage-main.jpg",
+              "/images/bunkimage-1.jfif"
+            ],
+            "description": "Shared accommodation cabins with bunk beds for workforce efficiency."
+          },
+          {
+            "title": "Portable dormitories",
+            "slug": "portable-dormitories",
+            "images": [
+              "/images/portable-cabin-main.jfif",
+              "/images/portable-cabin-1.webp"
+            ],
+            "description": "Temporary dormitories that can be relocated as needed."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Toilet & Sanitation Cabins",
+        "slug": "toilet-sanitation-cabins",
+        "description": "Hygienic, portable sanitation solutions for sites and camps.",
+        "heroImage": "/images/toilet-cabins-hero.jpg",
+        "images": [
+          "/images/toilet-sanitation-cabins-main.jpeg"
+        ],
+        "items": [
+          {
+            "title": "Portable toilet cabins",
+            "slug": "portable-toilet-cabins",
+            "images": [
+              "/images/portable-toilet-main.jpg",
+              "/images/portable-toilet-1.jfif"
+            ],
+            "description": "Compact and hygienic portable toilets for temporary sites."
+          },
+          {
+            "title": "Bathroom cabins",
+            "slug": "bathroom-cabins",
+            "images": [
+              "/images/bathroom-cabins-main.jfif"
+            ],
+            "description": "Self-contained bathroom units for camps and sites."
+          },
+          {
+            "title": "Shower units",
+            "slug": "shower-units",
+            "images": [
+              "/images/shower-units-main.jfif"
+            ],
+            "description": "Portable shower cabins for workforce convenience and hygiene."
+          },
+          {
+            "title": "Mobile sanitation units",
+            "slug": "mobile-sanitation-units",
+            "images": [
+              "/images/mobile-sanitation-units-main.jpg"
+            ],
+            "description": "Mobile units combining toilet and shower facilities for on-site use."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Control Room & Equipment Shelters",
+        "slug": "control-room-shelters",
+        "description": "Secure and weatherproof shelters for sensitive equipment and control rooms.",
+        "heroImage": "/images/control-room-hero.jpg",
+        "images": [
+          "/images/control-room-shelters-main.jpg"
+        ],
+        "items": [
+          {
+            "title": "Electrical control room cabins",
+            "slug": "electrical-control-room",
+            "images": [
+              "/images/electrical-cabin-main.jpg",
+              "/images/electrical-cabin-1.jfif"
+            ],
+            "description": "Weatherproof and secure cabins for electrical control equipment."
+          },
+          {
+            "title": "Automation panel shelters",
+            "slug": "automation-panel-shelters",
+            "images": [
+              "/images/automation-panel-shelters-main.jfif",
+              "/images/automation-panel-shelters-1.jfif"
+            ],
+            "description": "Shelters designed for housing automation and control panels."
+          },
+          {
+            "title": "DG container cabins",
+            "slug": "dg-container-cabins",
+            "images": [
+              "/images/dg-container-cabins-main.jfif",
+              "/images/dg-container-cabins-1.avif"
+            ],
+            "description": "Durable containers for diesel generator and backup power systems."
+          },
+          {
+            "title": "Server room containers",
+            "slug": "server-room-containers",
+            "images": [
+              "/images/server-room-container-main.jfif",
+              "/images/Server-room-containers-1.jfif"
+            ],
+            "description": "Climate-controlled modular containers for server rooms and IT equipment."
+          },
+          {
+            "title": "Instrumentation shelters",
+            "slug": "instrumentation-shelters",
+            "images": [
+              "/images/instrumental-shelter-main.jfif",
+              "/images/instrumental-shelter-1.jfif"
+            ],
+            "description": "Specialized shelters for sensitive instrumentation and monitoring devices."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Defence & Special Application Shelters",
+        "slug": "defence-special-shelters",
+        "description": "Heavy-duty shelters for defence and mission-critical applications.",
+        "heroImage": "/images/defence-shelters-hero.jpg",
+        "images": [
+          "/images/defence-special-shelters-main.jpeg"
+        ],
+        "items": [
+          {
+            "title": "Radar shelters",
+            "slug": "radar-shelters",
+            "images": [
+              "/images/radar-shelter-main.jfif"
+            ],
+            "description": "Rugged shelters designed to protect radar systems from environmental and mechanical damage."
+          },
+          {
+            "title": "Communication shelters",
+            "slug": "communication-shelters",
+            "images": [
+              "/images/communication-shelter-main.jfif",
+              "/images/communication-shelter-1.jfif"
+            ],
+            "description": "Secure and climate-controlled shelters for critical communication equipment."
+          },
+          {
+            "title": "Tactical equipment shelters",
+            "slug": "tactical-equipment-shelters",
+            "images": [
+              "/images/tactical-equipment-shelters-main.jfif",
+              "/images/tactical-equipment-shelters-1.jfif"
+            ],
+            "description": "Specialized shelters for tactical and mission-critical equipment in the field."
+          },
+          {
+            "title": "Field operation cabins",
+            "slug": "field-operation-cabins",
+            "images": [
+              "/images/field-operation-cabins-main.avif"
+            ],
+            "description": "Portable cabins for supporting field operations and command centers."
+          },
+          {
+            "title": "Ruggedized transport shelters",
+            "slug": "ruggedized-transport-shelters",
+            "images": [
+              "/images/ruggedized-transport-shelters-main.jpg"
+            ],
+            "description": "Transportable and durable shelters for equipment in harsh conditions."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Custom Containerized Solutions",
+        "slug": "custom-containerized-solutions",
+        "description": "Tailor-made containerized cabins for industrial, commercial, and defence use.",
+        "heroImage": "/images/custom-container-hero.jpg",
+        "images": [
+          "/images/custom-containerized-solutions-main.jfif"
+        ],
+        "items": [
+          {
+            "title": "Skid mounted containers",
+            "slug": "skid-mounted-containers",
+            "images": [
+              "/images/skid-mounted-containers-main.webp"
+            ],
+            "description": "Portable skid-mounted containers for easy relocation and deployment."
+          },
+          {
+            "title": "Mobile workshop containers",
+            "slug": "mobile-workshop-containers",
+            "images": [
+              "/images/mobile-workshop-containers-main.jfif",
+              "/images/mobile-workshop-containers-1.jpg"
+            ],
+            "description": "Fully equipped mobile workshops for on-site industrial tasks."
+          },
+          {
+            "title": "Battery energy storage containers",
+            "slug": "battery-energy-storage-containers",
+            "images": [
+              "/images/battery-energy-storage-containers-main.jfif"
+            ],
+            "description": "Specialized containers for safe housing of large battery energy storage systems."
+          },
+          {
+            "title": "Testing laboratory containers",
+            "slug": "testing-laboratory-containers",
+            "images": [
+              "/images/testing-laboratory-containers.jfif"
+            ],
+            "description": "Containerized labs for field or industrial testing applications."
+          },
+          {
+            "title": "Special purpose containers",
+            "slug": "special-purpose-containers",
+            "images": [
+              "/images/special-purpose-containers-main.jfif"
+            ],
+            "description": "Custom-designed containers tailored to unique industrial or defence needs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Infrastructure",
+    "services": [
+      {
+        "id": 1,
+        "title": "Industrial Infrastructure Solutions",
+        "slug": "industrial-infrastructure-solutions",
+        "description": "End-to-end infrastructure fabrication and installation solutions for industrial and government projects.",
+        "heroImage": "/images/infrastructure-hero.jpg",
+        "images": [
+          "/images/infrastructure-main.jpg"
+        ],
+        "items": [
+          {
+            "title": "Factory Sheds & Structures",
+            "slug": "factory-sheds-structures",
+            "images": [
+              "/images/factory-shed-1.jpg",
+              "/images/factory-shed-2.jpg"
+            ],
+            "description": "Heavy-duty steel structures for industrial factories and warehouses."
+          },
+          {
+            "title": "Pre-Engineered Buildings (PEB)",
+            "slug": "peb-buildings",
+            "images": [
+              "/images/peb-1.jpg",
+              "/images/peb-2.jpg"
+            ],
+            "description": "Fast-deploy, cost-effective pre-engineered building solutions."
+          },
+          {
+            "title": "Industrial Platforms & Staircases",
+            "slug": "industrial-platforms-staircases",
+            "images": [
+              "/images/platform-1.jpg",
+              "/images/staircase-1.jpg"
+            ],
+            "description": "Safe access platforms, staircases, and walkways for plants and facilities."
+          },
+          {
+            "title": "Warehouse Construction",
+            "slug": "warehouse-construction",
+            "images": [
+              "/images/warehouse-1.jpg"
+            ],
+            "description": "Large-scale warehouse design and construction services."
+          },
+          {
+            "title": "Site Development Works",
+            "slug": "site-development-works",
+            "images": [
+              "/images/site-dev-1.jpg"
+            ],
+            "description": "Complete site preparation, leveling, and infrastructure development."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Railway",
+    "services": [
+      {
+        "id": 1,
+        "title": "Seat & Berth",
+        "slug": "seat-berth",
+        "description": "Seat & Berth solutions...",
+         "heroImage": "/images/AC-First-class.png",
+        "images": [
+          "/images/seatimg.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Workshop Infrastructure",
+        "slug": "workshop-infrastructure",
+         "heroImage": "/images/Cheking-Area.png",
+        "description": "Design, construction and equipping of railway and metro maintenance workshops, depots and POH facilities.",
+        "images": [
+          "/images/Workshop-Area.png"
+        ]
+      },
+       {
+      "id": 3,
+      "title": "Civil Works",
+      "slug": "civil-works",
+        "heroImage": "/images/Briege.png",
+      "description": "Foundation-to-finish civil construction for railway buildings, platforms, foot-over-bridges, minor bridges, drainage and yard infrastructure executed under RDSO and Indian Railway Standards.",
+      "images": [
+        "/images/Station Civil Work.png"
+      ]
+    },
+    {
+  "id": 4,
+  "title": "EOT Crane Installation",
+  "slug": "eot-crane-installation",
+  "heroImage": "/images/Single-Grider.png",
+  "description": "Erection, alignment, load-testing and commissioning of single-girder, double-girder and gantry overhead-travelling (EOT) cranes for railway workshops, depots, industrial and warehousing facilities.",
+  "images": [
+    "/images/EOT-Crane.png"
+  ]
+},
+{
+  "id": 5,
+  "title": "Utility & Infrastructure Development",
+  "slug": "utility-infrastructure-development",
+     "heroImage": "/images/Track-Civil-Work.png",
+  "description": "Power, water, drainage, lighting and allied utility infrastructure supporting railway and metro depots, workshops and corridors.",
+  "images": [
+    "/images/Water Utility System.png"
+  ]
+},
+{
+  "id": 6,
+  "title": "Platform Infrastructure",
+  "slug": "platform-infrastructure",
+   "heroImage": "/images/Canopy-Roofing-Seat.png",
+  "description": "Complete platform infrastructure for railway and metro stations including canopies, seating, cabins and passenger amenities.",
+  "images": [
+    "/images/Seats-at-station.png"
+  ]
+}
+    ]
+  },
+  {
+  "category": "Healthcare",
+  "services": [
+    {
+      "id": 1,
+      "title": "Modular Hospital",
+      "slug": "modular-hospital",
+      "heroImage": "/images/hospital-corridor-system.png",
+      "description": "Prefabricated, rapidly deployable hospital blocks and complete room modules engineered for fast installation, infection control and scalability. Solutions include hospital corridors, wards, consultation cabins, laboratories, kitchens, utility rooms and mortuary facilities with integrated MEP, HVAC and medical gas systems.",
+      "images": [
+        "/images/doctor-consultation-cabin.png"
+      ]
+    },
+     {
+      "id": 2,
+      "title": "Medical Furniture",
+      "slug": "medical-furniture",
+      "heroImage": "/images/waiting-bench.png",
+      "description": "Complete range of hospital and ward furniture including beds, trolleys, cabinets, seating and support equipment engineered for hygiene, durability and patient/staff ergonomics. Manufactured with hospital-grade materials and finishes suitable for healthcare facilities.",
+      "images": [
+        "/images/general-ward-hospital-bed.png"
+      ]
+    },
+    {
+  "id": 3,
+  "title": "Oxygen Gas Pipeline Systems (MGPS)",
+  "slug": "medical-gas-pipeline",
+  "heroImage": "/images/hvac-ducting-system.png",
+  "description": "Medical Gas Pipeline Systems delivering oxygen, nitrous oxide, medical air and vacuum services to ICUs, operation theatres and wards. Designed with colour-coded copper networks, alarm monitoring systems and HVAC integration following HTM 02-01, NFPA 99 and ISO 7396-1 criteria.",
+  "images": [
+    "/images/hospital-medical-gas-pipeline-system2.png"
+  ]
+},
+{
+      "id": 4,
+      "title": "Modular Operation Theatre",
+      "slug": "modular-operation-theatre",
+      "heroImage": "/images/dental-treatment-chair-unit.png",
+      "description": "Modular operation theatre systems with laminar airflow, HEPA filtration, ceiling-mounted surgical lighting, operating tables and integrated panels engineered for infection control and precision surgical environments following ISO 14644 cleanroom classification and NABH OT design criteria.",
+      "images": [
+        "/images/operation-theatre-solution.png"
+      ]
+    },
+    {
+  "id": 5,
+  "title": "ICU Infrastructure",
+  "slug": "icu-infrastructure",
+  "heroImage": "/images/icu-infrastrycture-solutions.png",
+  "description": "Modular ICU and NICU build-outs with bed-head panels, isolation cubicles, monitoring integration and medical-gas outlets designed for NABH critical-care criteria.",
+  "images": [
+    "/images/icu-infrastrycture-solutions.png"
+  ]
+},
+{
+  "id": 6,
+  "title": "Fire Fighting System",
+  "slug": "fire-fighting-system",
+  "heroImage": "/images/portable-fire-extinguisher.png",
+  "description": "Hospital-grade fire detection, suppression and hydrant systems including extinguishers, alarms, sprinklers, hydrant networks and hose boxes designed according to NBC 2016 and relevant IS fire safety standards.",
+  "images": [
+    "/images/addressable-fire-alarm-system.png"
+  ]
+}
+  ]
+},
+{
+    "category": "Defence Infrastructure Solutions",
+    "services": [
+      {
+        "id": 7,
+        "title": "Medical Shelters",
+        "slug": "medical-shelters",
+        "heroImage": "/images/medical_shelters.jpg",
+        "description": "Specialized modular medical shelters designed for defence and field healthcare applications.",
+        "images": [
+          "/images/medical_shelters.jpg"
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Radar & Communication Shelters",
+        "slug": "radar-communication-shelters",
+        "heroImage": "/images/radar-communication-shelter.jpg",
+        "description": "Specialized hardened and modular shelters designed to protect radar, communication and electronic equipment in demanding defence environments.",
+        "images": [
+          "/images/radar-communication-shelter.jpg"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "EMI/EMC Shelters",
+        "slug": "emi-emc-shelters",
+        "heroImage": "/images/EMI-EMC-shelters-side.jpg",
+        "description": "EMI and EMC protected shelters designed for sensitive electronic, communication and defence equipment.",
+        "images": [
+          "/images/EMI-EMC-shelters.jpg"
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Defence Fabrication Works",
+        "slug": "defence-fabrication-works",
+        "heroImage": "/images/laser-cutting.jpg",
+        "description": "Precision heavy fabrication and structural solutions for defence infrastructure and specialized applications.",
+        "images": [
+          "/images/welding.jpg"
+        ]
+      }
+    ]
+  }
+]

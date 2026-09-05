@@ -1,0 +1,2151 @@
+/* ==========================================================
+   FINEX DEFENCE FABRICATION WORKS
+   Industrial Manufacturing / Defence Infrastructure
+========================================================== */
+
+:root {
+  --fab-navy: #071b2f;
+  --fab-navy-2: #0c2942;
+  --fab-blue: #153f60;
+  --fab-blue-light: #2d6488;
+
+  --fab-gold: #c59a52;
+  --fab-gold-light: #e4c47b;
+  --fab-gold-bg: #fff8e9;
+
+  --fab-white: #ffffff;
+  --fab-bg: #f3f5f7;
+
+  --fab-text: #566473;
+  --fab-heading: #111827;
+
+  --fab-border: #dfe5ea;
+
+  --fab-green: #287653;
+  --fab-red: #b84c4c;
+
+  --fab-shadow:
+    0 12px 35px rgba(7, 27, 47, 0.07);
+}
+
+
+/* ==========================================================
+   MAIN
+========================================================== */
+
+.fabrication-page {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+
+  padding-bottom: 60px;
+
+  font-family: "Poppins", sans-serif;
+
+  color: var(--fab-text);
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.fabrication-hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 500px;
+
+  margin-bottom: 30px;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  background: var(--fab-navy);
+
+  box-shadow:
+    0 20px 50px rgba(7, 27, 47, 0.18);
+}
+
+.fabrication-hero img {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+.fabrication-hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+
+  padding: 60px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 20, 35, 0.97) 0%,
+      rgba(7, 27, 47, 0.86) 35%,
+      rgba(7, 27, 47, 0.48) 62%,
+      rgba(7, 27, 47, 0.12) 100%
+    );
+}
+
+.fabrication-hero-content {
+  max-width: 700px;
+}
+
+.fabrication-hero-tag {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 14px;
+
+  border: 1px solid rgba(227, 196, 123, 0.35);
+  border-radius: 4px;
+
+  background: rgba(7, 27, 47, 0.72);
+
+  color: var(--fab-gold-light);
+
+  font-family: monospace;
+  font-size: 10px;
+
+  letter-spacing: 1.8px;
+}
+
+.fabrication-hero-content h1 {
+  margin: 22px 0 18px;
+
+  color: white;
+
+  font-size: 54px;
+  line-height: 1.08;
+
+  font-weight: 700;
+}
+
+.fabrication-hero-content h1 span {
+  display: block;
+
+  color: var(--fab-gold);
+}
+
+.fabrication-hero-content p {
+  max-width: 650px;
+
+  margin: 0 0 28px;
+
+  color: #d1dce5;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.fabrication-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.fabrication-hero-meta span {
+  padding: 9px 13px;
+
+  background: rgba(7, 27, 47, 0.72);
+
+  border: 1px solid rgba(227, 196, 123, 0.28);
+  border-radius: 4px;
+
+  color: var(--fab-gold-light);
+
+  font-family: monospace;
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* ==========================================================
+   STATS
+========================================================== */
+
+.fabrication-stats {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-bottom: 28px;
+
+  overflow: hidden;
+
+  background: white;
+
+  border: 1px solid var(--fab-border);
+  border-radius: 9px;
+
+  box-shadow: var(--fab-shadow);
+}
+
+.fabrication-stat {
+  position: relative;
+
+  min-height: 125px;
+
+  padding: 25px;
+
+  border-right: 1px solid var(--fab-border);
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #fafbfc
+    );
+}
+
+.fabrication-stat:last-child {
+  border-right: none;
+}
+
+.fabrication-stat::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--fab-gold),
+      var(--fab-gold-light)
+    );
+}
+
+.fabrication-stat > span {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: var(--fab-gold);
+
+  font-family: monospace;
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+.fabrication-stat h2 {
+  margin: 0 0 5px;
+
+  color: var(--fab-navy);
+
+  font-size: 25px;
+}
+
+.fabrication-stat p {
+  margin: 0;
+
+  color: #6c7885;
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.2px;
+
+  font-weight: 600;
+}
+
+
+/* ==========================================================
+   COMMON BOX
+========================================================== */
+
+.fabrication-box {
+  position: relative;
+
+  margin-bottom: 28px;
+
+  padding: 38px;
+
+  overflow: hidden;
+
+  background: white;
+
+  border: 1px solid var(--fab-border);
+  border-radius: 12px;
+
+  box-shadow: var(--fab-shadow);
+}
+
+.fabrication-box::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--fab-gold),
+      var(--fab-gold-light),
+      transparent
+    );
+}
+
+.fabrication-box h2 {
+  margin: 12px 0 30px;
+
+  color: var(--fab-heading);
+
+  font-size: 31px;
+  line-height: 1.2;
+}
+
+
+/* ==========================================================
+   TAG
+========================================================== */
+
+.fabrication-tag {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 7px 14px;
+
+  background: var(--fab-gold-bg);
+
+  border: 1px solid #ead4aa;
+
+  border-radius: 30px;
+
+  color: #946d32;
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 1.6px;
+
+  font-weight: 600;
+}
+
+.fabrication-tag::before {
+  content: "";
+
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: var(--fab-gold);
+
+  box-shadow:
+    0 0 0 3px rgba(197, 154, 82, 0.12);
+}
+
+
+/* ==========================================================
+   SECTION HEADING
+========================================================== */
+
+.fabrication-section-heading {
+  max-width: 850px;
+
+  margin-bottom: 35px;
+}
+
+.fabrication-section-heading h2 {
+  margin-bottom: 0;
+}
+
+.fabrication-section-heading h2 span {
+  color: var(--fab-gold);
+}
+
+.fabrication-section-heading p {
+  margin: 18px 0 0;
+
+  color: #687585;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   OVERVIEW
+========================================================== */
+
+.fabrication-overview {
+  padding: 45px;
+}
+
+.fabrication-overview-content {
+  display: grid;
+
+  grid-template-columns: 4px 1fr;
+
+  gap: 22px;
+
+  max-width: 950px;
+}
+
+.fabrication-overview-line {
+  width: 4px;
+
+  border-radius: 4px;
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--fab-gold),
+      rgba(197, 154, 82, 0.12)
+    );
+}
+
+.fabrication-overview-content p {
+  margin: 0;
+
+  color: #566473;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+}
+
+.fabrication-overview-content p + p {
+  margin-top: 12px;
+}
+
+
+/* ==========================================================
+   TITLE ROW
+========================================================== */
+
+.fabrication-title-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 20px;
+
+  margin-bottom: 35px;
+}
+
+.fabrication-title-row h2 {
+  margin-bottom: 0;
+}
+
+.fabrication-code {
+  color: #9ba6b2;
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* ==========================================================
+   GENERAL CARD GRID
+========================================================== */
+
+.fabrication-card-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.fabrication-card {
+  min-height: 245px;
+
+  padding: 24px;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--fab-border);
+
+  border-radius: 9px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.fabrication-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #d6b36b;
+
+  box-shadow:
+    0 15px 35px rgba(7, 27, 47, 0.09);
+}
+
+.fabrication-card-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 55px;
+  height: 55px;
+
+  margin-bottom: 16px;
+
+  background: var(--fab-navy);
+
+  color: var(--fab-gold);
+
+  border-radius: 8px;
+
+  font-size: 22px;
+}
+
+.fabrication-number {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #aeb8c2;
+
+  font-family: monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.fabrication-card h3 {
+  margin: 0 0 9px;
+
+  color: var(--fab-heading);
+
+  font-size: 18px;
+
+  line-height: 1.4;
+}
+
+.fabrication-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.fabrication-description {
+  max-width: 800px;
+
+  margin: -10px 0 30px;
+
+  color: #687585;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   EQUIPMENT
+========================================================== */
+
+.fabrication-equipment-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 14px;
+}
+
+.fabrication-equipment-card {
+  min-height: 245px;
+
+  padding: 20px;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--fab-border);
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.fabrication-equipment-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d7b56d;
+
+  background: #fffdf8;
+}
+
+.fabrication-equipment-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  margin-bottom: 13px;
+}
+
+.fabrication-equipment-top > span {
+  color: #aab4be;
+
+  font-family: monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.fabrication-equipment-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  background: var(--fab-navy);
+
+  color: var(--fab-gold);
+
+  border-radius: 7px;
+
+  font-size: 19px;
+}
+
+.fabrication-equipment-value {
+  margin-bottom: 7px;
+
+  color: var(--fab-gold);
+
+  font-family: monospace;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.fabrication-equipment-card h3 {
+  margin: 0 0 8px;
+
+  color: var(--fab-heading);
+
+  font-size: 14px;
+}
+
+.fabrication-equipment-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 14px;
+
+  line-height: 1.65;
+}
+
+
+/* ==========================================================
+   PRODUCT PORTFOLIO
+========================================================== */
+
+.fabrication-product-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+}
+
+.fabrication-product-card {
+  display: grid;
+
+  grid-template-columns: 60px 1fr;
+
+  gap: 18px;
+
+  padding: 23px;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--fab-border);
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.fabrication-product-card:hover {
+  border-color: #d8b66d;
+
+  background: #fffdf8;
+
+  transform: translateY(-3px);
+}
+
+.fabrication-product-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+
+  background: var(--fab-navy);
+
+  color: var(--fab-gold);
+
+  border-radius: 9px;
+
+  font-size: 23px;
+}
+
+.fabrication-product-card h3 {
+  margin: 0 0 8px;
+
+  color: var(--fab-heading);
+
+  font-size: 16px;
+}
+
+.fabrication-product-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   QUALITY
+========================================================== */
+
+.fabrication-quality {
+  background:
+    linear-gradient(
+      135deg,
+      #f7f9fb,
+      #ffffff
+    );
+}
+
+.fabrication-quality-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.fabrication-quality-card {
+  padding: 22px;
+
+  background: white;
+
+  border: 1px solid var(--fab-border);
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 7px 20px rgba(7, 27, 47, 0.04);
+
+  transition: 0.3s ease;
+}
+
+.fabrication-quality-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d7b46a;
+}
+
+.fabrication-quality-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 13px;
+
+  background: var(--fab-navy);
+
+  color: var(--fab-gold);
+
+  border-radius: 7px;
+
+  font-size: 19px;
+}
+
+.fabrication-quality-card > span {
+  color: #aeb8c2;
+
+  font-family: monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.fabrication-quality-card h3 {
+  margin: 8px 0;
+
+  color: var(--fab-heading);
+
+  font-size: 14px;
+}
+
+.fabrication-quality-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 11.5px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   STANDARDS
+========================================================== */
+
+.fabrication-standards {
+  background:
+    linear-gradient(
+      135deg,
+      #f8fafc,
+      #ffffff
+    );
+}
+
+.fabrication-standards-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.fabrication-standard-card {
+  padding: 22px;
+
+  background: white;
+
+  border: 1px solid var(--fab-border);
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 7px 20px rgba(7, 27, 47, 0.04);
+
+  transition: 0.3s ease;
+}
+
+.fabrication-standard-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d7b46a;
+}
+
+.fabrication-standard-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 13px;
+
+  background: var(--fab-navy);
+
+  color: var(--fab-gold);
+
+  border-radius: 7px;
+
+  font-size: 19px;
+}
+
+.fabrication-standard-card > span {
+  color: #abb5bf;
+
+  font-family: monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.fabrication-standard-card h3 {
+  margin: 8px 0;
+
+  color: var(--fab-heading);
+
+  font-size: 18px;
+}
+
+.fabrication-standard-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   ADVANCED PROCESSES
+========================================================== */
+
+.fabrication-process-section {
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(197, 154, 82, 0.08),
+      transparent 28%
+    ),
+    #ffffff;
+}
+
+.fabrication-process-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1px;
+
+  background: var(--fab-border);
+
+  border: 1px solid var(--fab-border);
+
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.fabrication-process-card {
+  position: relative;
+
+  min-height: 215px;
+
+  padding: 23px;
+
+  background: #ffffff;
+
+  transition: 0.3s ease;
+}
+
+.fabrication-process-card:hover {
+  background: #fffaf0;
+}
+
+.fabrication-process-number {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  color: #c3cbd3;
+
+  font-family: monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.fabrication-process-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 20px;
+
+  background: var(--fab-navy);
+
+  color: var(--fab-gold);
+
+  border-radius: 7px;
+
+  font-size: 19px;
+}
+
+.fabrication-process-card h3 {
+  margin: 0 0 8px;
+
+  color: var(--fab-heading);
+
+  font-size: 18px;
+}
+
+.fabrication-process-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   MATERIALS
+========================================================== */
+
+.fabrication-material-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.fabrication-material-card {
+  padding: 23px;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--fab-border);
+
+  border-radius: 9px;
+
+  transition: 0.3s ease;
+}
+
+.fabrication-material-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d6b36a;
+
+  background: #fffdf8;
+}
+
+.fabrication-material-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  margin-bottom: 14px;
+
+  background: var(--fab-navy);
+
+  color: var(--fab-gold);
+
+  border-radius: 8px;
+
+  font-size: 20px;
+}
+
+.fabrication-material-grade {
+  margin-bottom: 7px;
+
+  color: var(--fab-gold);
+
+  font-family: monospace;
+
+  font-size: 12px;
+
+  letter-spacing: 1.2px;
+}
+
+.fabrication-material-card h3 {
+  margin: 0 0 8px;
+
+  color: var(--fab-heading);
+
+  font-size: 16px;
+}
+
+.fabrication-material-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   CAPACITY
+========================================================== */
+
+.fabrication-capacity-section {
+  background:
+    linear-gradient(
+      135deg,
+      #071b2f,
+      #123b5d
+    );
+
+  border-color: #183e5d;
+
+  color: white;
+}
+
+.fabrication-capacity-section::before {
+  background:
+    linear-gradient(
+      90deg,
+      var(--fab-gold),
+      transparent
+    );
+}
+
+.fabrication-capacity-section .fabrication-tag {
+  background: rgba(197, 154, 82, 0.1);
+
+  border-color: rgba(227, 196, 123, 0.3);
+
+  color: var(--fab-gold-light);
+}
+
+.fabrication-capacity-section h2 {
+  color: white;
+}
+
+.fabrication-capacity-section h2 span {
+  color: var(--fab-gold);
+}
+
+.fabrication-capacity-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.fabrication-capacity-card {
+  min-height: 210px;
+
+  padding: 22px;
+
+  background: rgba(4, 18, 31, 0.72);
+}
+
+.fabrication-capacity-card > span {
+  color: var(--fab-gold);
+
+  font-family: monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+}
+
+.fabrication-capacity-card strong {
+  display: block;
+
+  margin: 20px 0 8px;
+
+  color: white;
+
+  font-size: 25px;
+
+  line-height: 1.15;
+}
+
+.fabrication-capacity-card h3 {
+  margin: 0 0 10px;
+
+  color: #dce5eb;
+
+  font-size: 16px;
+}
+
+.fabrication-capacity-card p {
+  margin: 0;
+
+  color: #aebdca;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* ==========================================================
+   ENGINEERING
+========================================================== */
+
+.fabrication-engineering-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.fabrication-engineering-card {
+  min-height: 215px;
+
+  padding: 23px;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--fab-border);
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.fabrication-engineering-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d6b36a;
+}
+
+.fabrication-engineering-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  margin-bottom: 14px;
+
+  background: var(--fab-navy);
+
+  color: var(--fab-gold);
+
+  border-radius: 8px;
+
+  font-size: 20px;
+}
+
+.fabrication-engineering-card > span {
+  color: #aeb8c2;
+
+  font-family: monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.fabrication-engineering-card h3 {
+  margin: 8px 0;
+
+  color: var(--fab-heading);
+
+  font-size: 17px;
+}
+
+.fabrication-engineering-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   TESTING
+========================================================== */
+
+.fabrication-testing-section {
+  background:
+    linear-gradient(
+      135deg,
+      #f7f9fb,
+      #ffffff
+    );
+}
+
+.fabrication-testing-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.fabrication-testing-card {
+  min-height: 205px;
+
+  padding: 22px;
+
+  background: white;
+
+  border: 1px solid var(--fab-border);
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.fabrication-testing-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d7b46a;
+}
+
+.fabrication-testing-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 13px;
+
+  background: var(--fab-navy);
+
+  color: var(--fab-gold);
+
+  border-radius: 7px;
+
+  font-size: 19px;
+}
+
+.fabrication-testing-card > span {
+  color: #aeb8c2;
+
+  font-family: monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.fabrication-testing-card h3 {
+  margin: 8px 0;
+
+  color: var(--fab-heading);
+
+  font-size: 17px;
+}
+
+.fabrication-testing-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   PROJECT MANAGEMENT
+========================================================== */
+
+.fabrication-project-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+}
+
+.fabrication-project-card {
+  display: grid;
+
+  grid-template-columns: 55px 1fr;
+
+  gap: 18px;
+
+  padding: 22px;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--fab-border);
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.fabrication-project-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #d7b46a;
+
+  background: #fffdf8;
+}
+
+.fabrication-project-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 55px;
+  height: 55px;
+
+  background: var(--fab-navy);
+
+  color: var(--fab-gold);
+
+  border-radius: 8px;
+
+  font-size: 21px;
+}
+
+.fabrication-project-card > div:last-child > span {
+  color: #aeb8c2;
+
+  font-family: monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.fabrication-project-card h3 {
+  margin: 6px 0 7px;
+
+  color: var(--fab-heading);
+
+  font-size: 15px;
+}
+
+.fabrication-project-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 11.5px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   SUSTAINABILITY
+========================================================== */
+
+.fabrication-sustainability {
+  background:
+    linear-gradient(
+      135deg,
+      #f6faf8,
+      #ffffff
+    );
+}
+
+.fabrication-sustainability-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.fabrication-sustainability-card {
+  padding: 25px;
+
+  background: white;
+
+  border: 1px solid #dfe8e3;
+
+  border-radius: 9px;
+
+  transition: 0.3s ease;
+}
+
+.fabrication-sustainability-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #83b59c;
+}
+
+.fabrication-sustainability-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 14px;
+
+  background: #edf7f1;
+
+  color: var(--fab-green);
+
+  border-radius: 8px;
+
+  font-size: 21px;
+}
+
+.fabrication-sustainability-card > span {
+  color: #aeb8c2;
+
+  font-family: monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.fabrication-sustainability-card h3 {
+  margin: 8px 0;
+
+  color: var(--fab-heading);
+
+  font-size: 15px;
+}
+
+.fabrication-sustainability-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   GALLERY
+========================================================== */
+
+.fabrication-gallery-section {
+  padding: 42px;
+}
+
+.fabrication-gallery-header {
+  max-width: 850px;
+
+  margin-bottom: 35px;
+}
+
+.fabrication-gallery-header h2 {
+  margin: 15px 0 12px;
+
+  color: var(--fab-heading);
+
+  font-size: 36px;
+
+  line-height: 1.2;
+}
+
+.fabrication-gallery-header h2 span {
+  color: var(--fab-gold);
+}
+
+.fabrication-gallery-header p {
+  max-width: 800px;
+
+  margin: 0;
+
+  color: #667482;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.fabrication-gallery-grid {
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+
+  grid-template-rows: repeat(2, 250px);
+
+  gap: 15px;
+}
+
+.fabrication-gallery-card {
+  position: relative;
+
+  overflow: hidden;
+
+  background: var(--fab-navy);
+
+  border: 1px solid var(--fab-border);
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 10px 30px rgba(7, 27, 47, 0.08);
+}
+
+.fabrication-gallery-1 {
+  grid-column: span 7;
+
+  grid-row: span 2;
+}
+
+.fabrication-gallery-2,
+.fabrication-gallery-3 {
+  grid-column: span 5;
+}
+
+.fabrication-gallery-4 {
+  grid-column: span 5;
+}
+
+.fabrication-gallery-card img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.7s ease,
+    filter 0.5s ease;
+}
+
+.fabrication-gallery-card:hover img {
+  transform: scale(1.07);
+
+  filter:
+    brightness(0.72)
+    saturate(1.08);
+}
+
+.fabrication-gallery-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  padding: 22px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 27, 47, 0.18),
+      transparent 35%,
+      rgba(7, 27, 47, 0.9) 100%
+    );
+}
+
+.fabrication-gallery-overlay > span {
+  align-self: flex-start;
+
+  padding: 7px 10px;
+
+  background: rgba(7, 27, 47, 0.78);
+
+  border: 1px solid rgba(227, 196, 123, 0.3);
+
+  border-radius: 4px;
+
+  color: var(--fab-gold-light);
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+}
+
+.fabrication-gallery-overlay small {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: var(--fab-gold-light);
+
+  font-family: monospace;
+
+  font-size: 8px;
+
+  letter-spacing: 1.6px;
+}
+
+.fabrication-gallery-overlay h3 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 18px;
+
+  line-height: 1.35;
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.fabrication-footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 40px;
+
+  margin-top: 40px;
+
+  padding: 45px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #081c2e,
+      #123b5d
+    );
+
+  border-radius: 10px;
+
+  color: white;
+
+  box-shadow:
+    0 20px 50px rgba(7, 27, 47, 0.16);
+}
+
+.fabrication-footer > div:first-child {
+  max-width: 760px;
+}
+
+.fabrication-footer > div:first-child > span {
+  color: var(--fab-gold);
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+.fabrication-footer h2 {
+  margin: 15px 0;
+
+  color: white;
+
+  font-size: 30px;
+
+  line-height: 1.3;
+}
+
+.fabrication-footer h2 strong {
+  color: var(--fab-gold);
+}
+
+.fabrication-footer p {
+  margin: 0;
+
+  color: #b8c7d4;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.fabrication-footer-code {
+  padding: 20px;
+
+  border-left:
+    1px solid rgba(255, 255, 255, 0.15);
+
+  color: #8da0b2;
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  line-height: 1.8;
+
+  letter-spacing: 2px;
+
+  text-align: right;
+}
+
+
+/* ==========================================================
+   RESPONSIVE — 1100px
+========================================================== */
+
+@media (max-width: 1100px) {
+
+  .fabrication-card-grid,
+  .fabrication-quality-grid,
+  .fabrication-standards-grid,
+  .fabrication-testing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fabrication-equipment-grid,
+  .fabrication-process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .fabrication-material-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .fabrication-engineering-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fabrication-capacity-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE — 900px
+========================================================== */
+
+@media (max-width: 900px) {
+
+  .fabrication-hero-content h1 {
+    font-size: 45px;
+  }
+
+  .fabrication-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fabrication-stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .fabrication-stat {
+    border-bottom: 1px solid var(--fab-border);
+  }
+
+  .fabrication-product-grid,
+  .fabrication-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fabrication-sustainability-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fabrication-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-rows:
+      260px
+      220px
+      220px;
+  }
+
+  .fabrication-gallery-1 {
+    grid-column: span 2;
+
+    grid-row: span 1;
+  }
+
+  .fabrication-gallery-2,
+  .fabrication-gallery-3,
+  .fabrication-gallery-4 {
+    grid-column: span 1;
+  }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE — 700px
+========================================================== */
+
+@media (max-width: 700px) {
+
+  .fabrication-page {
+    width: 94%;
+  }
+
+  .fabrication-hero {
+    min-height: 520px;
+  }
+
+  .fabrication-hero-overlay {
+    padding: 30px 25px;
+  }
+
+  .fabrication-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .fabrication-hero-content p {
+    font-size: 14px;
+  }
+
+  .fabrication-box {
+    padding: 28px 22px;
+  }
+
+  .fabrication-overview {
+    padding: 30px 24px;
+  }
+
+  .fabrication-box h2 {
+    font-size: 27px;
+  }
+
+  .fabrication-card-grid,
+  .fabrication-equipment-grid,
+  .fabrication-product-grid,
+  .fabrication-quality-grid,
+  .fabrication-standards-grid,
+  .fabrication-process-grid,
+  .fabrication-material-grid,
+  .fabrication-engineering-grid,
+  .fabrication-testing-grid,
+  .fabrication-project-grid,
+  .fabrication-sustainability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fabrication-capacity-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fabrication-title-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .fabrication-gallery-section {
+    padding: 28px 22px;
+  }
+
+  .fabrication-gallery-header h2 {
+    font-size: 30px;
+  }
+
+  .fabrication-gallery-grid {
+    grid-template-columns: 1fr;
+
+    grid-template-rows: none;
+  }
+
+  .fabrication-gallery-1,
+  .fabrication-gallery-2,
+  .fabrication-gallery-3,
+  .fabrication-gallery-4 {
+    grid-column: span 1;
+
+    grid-row: span 1;
+
+    height: 250px;
+  }
+
+  .fabrication-gallery-1 {
+    height: 300px;
+  }
+
+  .fabrication-footer {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 30px;
+  }
+
+  .fabrication-footer-code {
+    width: 100%;
+
+    border-left: none;
+
+    border-top:
+      1px solid rgba(255, 255, 255, 0.15);
+
+    padding-left: 0;
+
+    padding-top: 18px;
+
+    text-align: left;
+  }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE — 500px
+========================================================== */
+
+@media (max-width: 500px) {
+
+  .fabrication-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .fabrication-stat {
+    border-right: none;
+
+    border-bottom: 1px solid var(--fab-border);
+  }
+
+  .fabrication-stat:last-child {
+    border-bottom: none;
+  }
+
+  .fabrication-hero {
+    min-height: 550px;
+  }
+
+  .fabrication-hero-content h1 {
+    font-size: 31px;
+  }
+
+  .fabrication-hero-meta {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .fabrication-section-heading h2,
+  .fabrication-box h2 {
+    font-size: 25px;
+  }
+
+  .fabrication-overview-content {
+    grid-template-columns: 3px 1fr;
+  }
+
+  .fabrication-overview-content p {
+    font-size: 14px;
+  }
+
+  .fabrication-capacity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fabrication-product-card,
+  .fabrication-project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .fabrication-product-icon,
+  .fabrication-project-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .fabrication-gallery-card {
+    height: 230px;
+  }
+
+  .fabrication-gallery-1 {
+    height: 270px;
+  }
+
+  .fabrication-gallery-overlay {
+    padding: 17px;
+  }
+
+  .fabrication-gallery-overlay h3 {
+    font-size: 16px;
+  }
+
+  .fabrication-footer h2 {
+    font-size: 24px;
+  }
+
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .fabrication-card,
+  .fabrication-equipment-card,
+  .fabrication-product-card,
+  .fabrication-quality-card,
+  .fabrication-standard-card,
+  .fabrication-process-card,
+  .fabrication-material-card,
+  .fabrication-engineering-card,
+  .fabrication-testing-card,
+  .fabrication-project-card,
+  .fabrication-sustainability-card,
+  .fabrication-gallery-card img {
+    transition: none;
+  }
+
+}

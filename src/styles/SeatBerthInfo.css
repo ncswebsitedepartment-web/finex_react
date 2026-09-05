@@ -1,0 +1,1884 @@
+/* ==========================================================
+   SEAT & BERTH INFORMATION PAGE
+   Finex Railway Interior Solutions
+   Theme: "Spec Sheet" — engineering / blueprint documentation
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+:root{
+    --ink:#0B2540;
+    --steel:#28517A;
+    --slate:#5D6C7A;
+    --brass:#C6862B;
+    --brass-dark:#946318;
+    --paper:#F3F5F8;
+    --paper-line:#E1E7EE;
+    --white:#ffffff;
+    --text:#4A5560;
+    --heading:#0E2B47;
+    --border:#E1E6EC;
+    --ok:#2F7A52;
+
+    --font-display:'poppins', sans-serif;
+    --font-body:'poppins', sans-serif;
+    --font-mono:'poppins', sans-serif;
+
+    --shadow:0 8px 24px rgba(11,37,64,.08);
+    --shadow-hover:0 18px 40px rgba(11,37,64,.14);
+}
+
+*{
+    box-sizing:border-box;
+}
+
+.seat-service-content{
+    width:min(1180px, 92%);
+    margin:0 auto;
+    font-family:var(--font-body);
+    padding:0 0 10px;
+    min-width:0;
+}
+
+/* ==========================================================
+   HERO SECTION — title-block styling
+========================================================== */
+
+.seat-hero{
+    position:relative;
+    background:
+        linear-gradient(135deg,rgba(11,37,64,.95),rgba(40,81,122,.93)),
+        repeating-linear-gradient(0deg, rgba(255,255,255,.05) 0px, rgba(255,255,255,.05) 1px, transparent 1px, transparent 40px),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0px, rgba(255,255,255,.05) 1px, transparent 1px, transparent 40px),
+        var(--ink);
+    color:#fff;
+    padding:60px 56px;
+    border-radius:6px;
+    margin:32px 0 36px;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.seat-hero::before,
+.seat-hero::after{
+    content:"";
+    position:absolute;
+    width:22px;
+    height:22px;
+    border:2px solid var(--brass);
+    opacity:.85;
+    z-index:2;
+}
+
+.seat-hero::before{
+    top:18px;
+    left:18px;
+    border-right:none;
+    border-bottom:none;
+}
+
+.seat-hero::after{
+    bottom:18px;
+    right:18px;
+    border-left:none;
+    border-top:none;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.15fr 1fr;
+    gap:48px;
+    align-items:center;
+    position:relative;
+    z-index:1;
+}
+
+.hero-doc-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:1.5px;
+    color:var(--brass);
+    text-transform:uppercase;
+    margin-bottom:22px;
+}
+
+.hero-doc-tag::before{
+    content:"";
+    width:26px;
+    height:1px;
+    background:var(--brass);
+}
+
+.seat-hero h1{
+    font-family:var(--font-display);
+    font-size:42px;
+    font-weight:600;
+    letter-spacing:.3px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+    line-height:1.18;
+}
+
+.seat-hero p{
+    max-width:520px;
+    margin:0 0 26px;
+    font-size:16px;
+    line-height:1.85;
+    color:#C9D3DD;
+    font-weight:400;
+    padding-left:18px;
+    border-left:2px solid rgba(198,134,43,.55);
+}
+
+.hero-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.hero-tag{
+    font-family:var(--font-mono);
+    font-size:11.5px;
+    letter-spacing:.6px;
+    color:#DCE6EF;
+    border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;
+    border-radius:2px;
+    text-transform:uppercase;
+}
+
+/* --- hero diagram panel --- */
+
+.hero-diagram{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:4px;
+    padding:18px;
+}
+
+.hero-diagram svg{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.hero-diagram-caption{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:12px;
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:.8px;
+    color:#9FB2C4;
+    text-transform:uppercase;
+}
+
+.hero-diagram-caption span:last-child{
+    color:var(--brass);
+}
+
+/* ==========================================================
+   STATS — data strip, not cards
+========================================================== */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
+    margin-bottom:40px;
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:4px;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+}
+
+.stat-card{
+    background:transparent;
+    border-radius:0;
+    text-align:left;
+    padding:6px 28px;
+    border-right:1px solid var(--border);
+    border-top:3px solid var(--brass);
+    transition:background .25s ease;
+}
+
+.stat-card:last-child{
+    border-right:none;
+}
+
+.stat-card:hover{
+    background:#FAFBFC;
+}
+
+.stat-card h2{
+    font-family:var(--font-mono);
+    color:var(--ink);
+    font-size:17px;
+    margin-bottom:8px;
+    font-weight:600;
+    letter-spacing:.2px;
+}
+
+.stat-card p{
+    margin:0;
+    color:var(--slate);
+    font-size:12.5px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.8px;
+    font-family:var(--font-display);
+}
+
+/* ==========================================================
+   SERVICE INFORMATION PREMIUM UI
+========================================================== */
+
+.service-info {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e8eaee;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06);
+    transition: all .35s ease;
+}
+
+.service-info:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 18px 45px rgba(15, 23, 42, 0.10);
+}
+
+/* Top Accent */
+
+.service-info::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        var(--brass),
+        #d8b16b,
+        var(--brass)
+    );
+}
+
+/* Soft Background Decoration */
+
+.service-info::after {
+    content: "";
+    position: absolute;
+    right: -80px;
+    top: -80px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(
+        rgba(196,150,74,.08),
+        transparent 70%
+    );
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.section-header{
+    margin-bottom:34px;
+    position:relative;
+    z-index:2;
+}
+
+.section-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:7px 16px;
+
+    background:#FFF8EA;
+    color:var(--brass-dark);
+
+    border:1px solid #ead4aa;
+    border-radius:30px;
+
+    font-size:12px;
+    letter-spacing:1.3px;
+    text-transform:uppercase;
+    font-family:var(--font-mono);
+    font-weight:600;
+}
+
+.section-tag::before{
+    content:"";
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--brass);
+}
+
+.service-info h2 {
+    font-size: 32px;
+    color: #151515;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 700;
+   
+}
+
+.service-info h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin-top: 12px;
+    background: #c59a52;
+    border-radius: 2px;
+}
+
+/* ===========================
+   CONTENT
+   NOTE: renamed from ".service-content" to ".seat-info-text"
+   to avoid colliding with the unrelated ".service-content"
+   wrapper class used in ServiceDetail.jsx / serviceDetail.css
+=========================== */
+
+.seat-info-text{
+    position:relative;
+    z-index:2;
+
+    display:grid;
+    gap:10px;
+
+    padding-left:24px;
+    border-left:4px solid rgba(194,145,65,.18);
+}
+
+.seat-info-text p{
+    margin:0;
+
+    font-size:16px;
+    line-height:1.9;
+
+    color:var(--text);
+
+    max-width:950px;
+}
+
+/* Remove Drop Cap */
+
+.seat-info-text p:first-child::first-letter{
+    all:unset;
+}
+
+/* ===========================
+   Optional emphasis
+=========================== */
+
+.seat-info-text strong{
+    color:var(--heading);
+    font-weight:700;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:768px){
+
+    .service-info{
+        padding:28px 22px;
+        border-radius:12px;
+    }
+
+    .service-info h2{
+        font-size:26px;
+        gap:14px;
+    }
+
+    .service-info h2::before{
+        width:38px;
+    }
+
+    .seat-info-text p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .section-tag{
+        font-size:11px;
+    }
+}
+/*=========================================================
+PRODUCT SCOPE
+=========================================================*/
+
+.scope-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+}
+
+.info-box:has(.scope-grid) h2{
+
+    font-size:32px;
+
+    color:#151515;
+
+    margin-bottom:35px;
+
+    position:relative;
+
+    font-weight:700;
+
+}
+
+
+.info-box:has(.scope-grid) h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:70px;
+
+    height:3px;
+
+    margin-top:14px;
+
+    background:#c59a52;
+
+}
+
+/* Card */
+
+.scope-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    border:1px solid #E2E6EB;
+
+    border-radius:12px;
+
+    padding:10px;
+
+    min-height:180px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease,
+        background .35s ease;
+
+    box-shadow:
+        0 6px 20px rgba(11,31,58,.05);
+
+}
+
+
+
+/* Gold top line */
+
+.scope-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+
+    background:linear-gradient(
+        90deg,
+        var(--gold),
+        var(--gold-bright)
+    );
+
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.35s ease;
+
+}
+
+
+
+/* Decorative circle */
+
+.scope-card::after{
+
+    content:"";
+
+    position:absolute;
+
+
+    right:-50px;
+
+    bottom:-50px;
+
+
+    width:120px;
+
+    height:120px;
+
+
+    border-radius:50%;
+
+
+    background:rgba(192,138,62,.06);
+
+
+    transition:.35s ease;
+
+}
+
+
+
+/* Hover */
+
+.scope-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--gold);
+
+
+    box-shadow:
+
+        0 22px 45px rgba(11,31,58,.16);
+
+}
+
+
+
+.scope-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+
+
+.scope-card:hover::after{
+
+    transform:scale(1.8);
+
+    background:rgba(192,138,62,.12);
+
+}
+
+
+
+/* Content */
+
+.scope-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+.scope-content h3{
+
+    font-family:var(--font-display);
+
+    color:var(--navy);
+
+    font-size:18px;
+
+    font-weight:600;
+margin-top: 8px;
+    margin-bottom:10px;
+
+    letter-spacing:.3px;
+    /* white-space: nowrap; */
+
+}
+
+
+
+.scope-content p{
+
+    color:var(--graphite-soft);
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    margin:0;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:1100px){
+
+    .scope-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:700px){
+
+    .scope-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .scope-card{
+
+        min-height:auto;
+
+        padding:24px;
+
+    }
+
+
+    .scope-content h3{
+
+        font-size:21px;
+
+    }
+
+}
+/* ==========================================================
+   TECHNICAL TABLE — spec sheet
+========================================================== */
+.info-box:has(.table-wrapper) h2{
+
+    font-size:32px;
+
+    color:#151515;
+
+    margin-bottom:35px;
+
+    position:relative;
+
+    font-weight:700;
+
+}
+
+
+.info-box:has(.table-wrapper) h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:70px;
+
+    height:3px;
+
+    margin-top:14px;
+
+    background:#c59a52;
+
+}
+
+.table-wrapper{
+    overflow-x:auto;
+    border-radius:4px;
+    border:1px solid var(--border);
+    max-width:100%;
+    -webkit-overflow-scrolling:touch;
+}
+
+.table-wrapper table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:650px;
+}
+
+.table-wrapper thead{
+    background:var(--ink);
+}
+
+.table-wrapper th{
+    color:#fff;
+    padding:16px 18px;
+    text-align:left;
+    font-size:12px;
+    letter-spacing:1px;
+    font-weight:600;
+    text-transform:uppercase;
+    font-family:var(--font-mono);
+}
+
+.table-wrapper th:first-child{
+    padding-left:20px;
+}
+
+.table-wrapper td{
+    padding:16px 18px;
+    border-bottom:1px solid var(--paper-line);
+    color:var(--text);
+    font-size:14px;
+    font-family:var(--font-mono);
+    transition:color .2s ease;
+}
+
+.table-wrapper td:first-child{
+    font-family:var(--font-body);
+    font-weight:600;
+    color:var(--heading);
+    padding-left:20px;
+}
+
+.table-wrapper tbody tr:nth-child(even){
+    background:#F9FAFB;
+}
+
+.table-wrapper tbody tr:hover{
+    background:#FBF3E4;
+}
+
+.table-wrapper tbody tr:hover td:first-child{
+    color:var(--brass-dark);
+}
+
+/* ==========================================================
+   STANDARDS — approval stamp cards
+========================================================== */
+
+
+
+.info-box:has(.standards-grid){
+
+    background:
+    linear-gradient(
+        135deg,
+        #faf8f3,
+        #ffffff
+    );
+
+    padding:15px;
+
+}
+
+
+/* SECTION TITLE */
+
+.info-box:has(.standards-grid) h2{
+
+    font-size:32px;
+
+    color:#151515;
+
+    margin-bottom:35px;
+
+    position:relative;
+
+    font-weight:700;
+
+}
+
+
+.info-box:has(.standards-grid) h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:70px;
+
+    height:3px;
+
+    margin-top:14px;
+
+    background:#c59a52;
+
+}
+
+
+
+/* GRID */
+
+.standards-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:26px;
+
+}
+
+
+
+/* CARD */
+
+
+.standard-card{
+
+
+    position:relative;
+
+
+    background:white;
+
+
+    border-radius:18px;
+
+
+    padding:15px 30px;
+
+
+    border:1px solid #e8e2d8;
+
+
+    overflow:hidden;
+
+
+    transition:.45s ease;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.06);
+
+
+
+}
+
+
+
+/* GOLD TOP LINE */
+
+.standard-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #b78a45,
+        #e3c47b
+    );
+
+
+}
+
+
+
+/* CERTIFIED BADGE */
+
+
+.standard-card::after{
+
+
+    content:"CERTIFIED";
+
+
+    position:absolute;
+
+
+    top:22px;
+
+
+    right:20px;
+
+
+    font-family:var(--font-mono);
+
+
+    font-size:10px;
+
+
+    letter-spacing:2px;
+
+
+    color:#b78a45;
+
+
+    background:#fff8e9;
+
+
+    border:1px solid #e5c98d;
+
+
+    padding:5px 10px;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+/* HOVER */
+
+
+.standard-card:hover{
+
+
+    transform:
+
+    translateY(-8px);
+
+
+    box-shadow:
+
+    0 25px 55px rgba(0,0,0,.12);
+
+
+    border-color:#d8b56d;
+
+
+}
+
+
+
+
+
+
+/* ICON */
+
+
+.standard-icon{
+
+
+    width:42px;
+
+
+    height:42px;
+
+
+    /* border-radius:16px; */
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    background:
+
+
+    linear-gradient(
+        135deg,
+        #111827,
+        #263445
+    );
+
+
+    color:#d6a354;
+
+
+    font-size:26px;
+
+
+    margin-bottom:10px;
+
+
+    box-shadow:
+
+
+    0 10px 25px rgba(0,0,0,.15);
+
+
+    transition:.35s ease;
+
+
+}
+
+
+
+.standard-card:hover .standard-icon{
+
+
+    transform:rotateY(180deg);
+
+
+}
+
+
+
+
+
+/* TITLE */
+
+
+.standard-card h3{
+
+
+    color:#171717;
+
+
+    font-size:18px;
+
+
+    font-weight:700;
+
+
+    margin-bottom:12px;
+
+
+    letter-spacing:.2px;
+
+
+}
+
+
+
+
+/* TEXT */
+
+
+.standard-card p{
+
+
+    color:#667085;
+
+
+    font-size:14px;
+
+
+    line-height:1.8;
+
+
+    margin:0;
+
+
+}
+
+
+
+
+
+/* NUMBER DETAIL */
+
+.standard-card:hover::after{
+
+
+    background:#b78a45;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+/* TABLET */
+
+@media(max-width:1000px){
+
+
+.standards-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+
+.info-box:has(.standards-grid){
+
+padding:25px;
+
+}
+
+
+
+.standards-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
+/* =====================================================
+ PREMIUM RAILWAY PROJECT GALLERY
+===================================================== */
+
+
+.gallery-section{
+
+
+    background:
+    linear-gradient(
+        135deg,
+        #faf8f3,
+        #ffffff
+    );
+
+
+    padding:20px 10px;
+
+    overflow:hidden;
+
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+
+.gallery-header{
+
+
+    max-width:850px;
+
+    margin-bottom:55px;
+
+
+}
+
+
+
+.gallery-tag{
+
+
+    display:inline-block;
+
+
+    color:#b48a45;
+
+
+    font-size:12px;
+
+
+    letter-spacing:4px;
+
+
+    font-weight:700;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.gallery-header h2{
+
+
+    font-size:44px;
+
+
+    line-height:1.2;
+
+
+    color:#151515;
+
+
+    margin:0 0 18px;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+.gallery-header h2 span{
+
+
+    color:#b48a45;
+
+
+}
+
+
+
+.gallery-header p{
+
+
+    max-width:700px;
+
+
+    color:#667085;
+
+
+    font-size:16px;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+/* ================= GRID ================= */
+
+
+/* ================= GRID ================= */
+.gallery-grid{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: 250px;
+    gap:24px;
+}
+
+/* ================= CARD ================= */
+.gallery-card{
+    position:relative;
+    overflow:hidden;
+    background:#111;
+    cursor:pointer;
+    box-shadow: 0 25px 60px rgba(0,0,0,.15);
+    transition:.5s ease;
+}
+
+
+
+
+.gallery-card:hover{
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+
+
+    0 35px 80px rgba(0,0,0,.25);
+
+
+}
+
+
+
+
+
+/* IMAGE */
+
+
+.gallery-card img{
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+
+    filter:
+    brightness(.72)
+    contrast(1.05);
+
+
+
+    transition:
+
+
+    transform .8s ease,
+    filter .5s ease;
+
+
+
+}
+
+
+
+
+.gallery-card:hover img{
+
+
+    transform:scale(1.12);
+
+
+
+    filter:
+    brightness(.9)
+    contrast(1.1);
+
+
+}
+
+
+
+
+
+
+/* ================= OVERLAY ================= */
+
+
+
+.gallery-overlay{
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    padding:32px;
+
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:flex-end;
+
+
+
+
+    /* background:
+
+
+    linear-gradient(
+
+        0deg,
+
+        rgba(0,0,0,.9),
+
+        transparent 70%
+
+    ); */
+
+
+
+}
+
+
+
+
+
+.gallery-number{
+
+
+    color:#d6a354;
+
+
+    font-size:12px;
+
+
+    letter-spacing:5px;
+
+
+    font-family:monospace;
+
+
+    margin-bottom:12px;
+
+
+
+}
+
+
+
+
+
+.gallery-overlay h3{
+
+
+    color:white;
+
+
+    font-size:20px;
+
+
+    line-height:1.25;
+
+
+    font-weight:700;
+
+
+    max-width:280px;
+
+
+    margin:0;
+
+
+
+}
+
+
+
+
+.gallery-link{
+
+
+    margin-top:15px;
+
+
+    color:#e0bb70;
+
+
+    font-size:14px;
+
+
+    opacity:0;
+
+
+    transform:translateY(15px);
+
+
+    transition:.4s ease;
+
+
+}
+
+
+
+
+
+.gallery-card:hover .gallery-link{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+
+
+
+
+
+/* ================= LAYOUT ================= */
+
+
+
+.gallery-1{
+
+
+    grid-column:
+    span 6;
+
+
+    grid-row:
+    span 2;
+
+
+}
+
+
+
+
+
+.gallery-2,
+.gallery-3{
+
+
+    grid-column:
+    span 6;
+
+
+
+}
+
+
+
+.gallery-4{
+
+
+    grid-column:
+    span 12;
+
+
+
+}
+
+
+
+.gallery-card:nth-child(n+5){
+
+
+    grid-column:
+    span 6;
+
+
+
+}
+
+
+
+
+
+/* ================= SIDEBAR SERVICE BOX ================= */
+
+
+.info-box{
+
+
+    background:white;
+    min-width:0;
+    max-width:100%;
+    overflow:hidden;
+
+
+}
+
+
+
+.info-box h2{
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+
+/* CONSULTATION BOX */
+
+
+.consultation-box{
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #0c3769,
+
+        #246bb8
+
+    );
+
+
+    color:white;
+
+
+    padding:35px;
+
+
+}
+
+
+
+
+.consultation-box h3{
+
+
+    color:#ffd26a;
+
+
+    font-size:22px;
+
+
+}
+
+
+
+
+
+/* ================= TABLET ================= */
+@media(max-width:1000px){
+
+    .gallery-section{
+        padding:55px 30px;
+    }
+
+    .gallery-grid{
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: unset;   /* let rows size naturally */
+    }
+
+    .gallery-card,
+    .gallery-1,
+    .gallery-2,
+    .gallery-3,
+    .gallery-4,
+    .gallery-card:nth-child(n+5){
+        grid-column: span 1;
+        grid-row: span 1;
+        aspect-ratio: 4 / 3;     /* card sizes itself — no magic pixel number */
+        height: auto;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:600px){
+
+    .gallery-section{
+        padding:35px 20px;
+    }
+
+    .gallery-header h2{
+        font-size:32px;
+        
+    }
+
+    .gallery-grid{
+        grid-template-columns: 1fr;
+        gap:48px;
+    }
+
+    .gallery-card{
+        aspect-ratio: 4 / 3;
+        height: auto;
+    }
+
+    .gallery-overlay{
+        padding:22px;
+    }
+
+    .gallery-overlay h3{
+        font-size:21px;
+        max-width: 100%;
+        
+    }
+}
+/* ==========================================================
+   ACCESSIBILITY — focus states
+========================================================== */
+
+a:focus-visible,
+button:focus-visible{
+    outline:2px solid var(--brass);
+    outline-offset:2px;
+}
+
+/* ==========================================================
+   ANIMATION
+========================================================== */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.seat-hero,
+.info-box{
+    animation:fadeUp .6s ease;
+}
+
+@media (prefers-reduced-motion: reduce){
+    .seat-hero,
+    .info-box,
+    .scope-card,
+    .standard-card,
+    .gallery-card,
+    .gallery-card img{
+        animation:none !important;
+        transition:none !important;
+    }
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+.table-wrapper::-webkit-scrollbar{
+    height:8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb{
+    background:var(--steel);
+    border-radius:10px;
+}
+
+.table-wrapper::-webkit-scrollbar-track{
+    background:#eef2f6;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1200px){
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+        grid-auto-rows:230px;
+    }
+    .gallery-card,
+    .gallery-1,
+    .gallery-2,
+    .gallery-3,
+    .gallery-4,
+    .gallery-card:nth-child(n+5){
+        grid-column:span 1;
+        grid-row:span 1;
+    }
+}
+
+@media (max-width:992px){
+    .hero-grid{
+        grid-template-columns:1fr;
+    }
+    .hero-diagram{
+        order:-1;
+        max-width:420px;
+    }
+    .seat-hero{
+        padding:48px 32px;
+    }
+    .seat-hero h1{
+        font-size:32px;
+    }
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .stat-card:nth-child(2n){
+        border-right:none;
+    }
+    .stat-card{
+        border-bottom:1px solid var(--border);
+    }
+    .scope-grid{
+        grid-template-columns:1fr;
+    }
+    .standards-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media (max-width:768px){
+
+    .seat-service-content{
+        width:92%;
+        padding-bottom:40px;
+    }
+    .info-box{
+        padding:28px 26px;
+    }
+    .seat-hero{
+        padding:40px 24px;
+        margin-top:20px;
+    }
+    .seat-hero h1{
+        font-size:27px;
+    }
+    .seat-hero p{
+        font-size:15px;
+    }
+    .info-box h2{
+        font-size:21px;
+    }
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media (max-width:576px){
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+    .stat-card{
+        border-right:none !important;
+        border-bottom:1px solid var(--border);
+    }
+    .gallery-card img{
+        height:210px;
+    }
+    .table-wrapper table{
+        min-width:560px;
+    }
+}
+
+@media (max-width:400px){
+    .seat-hero h1{
+        font-size:22px;
+    }
+    .gallery-header h2{
+        font-size:26px;
+    }
+    .service-info h2,
+    .info-box h2{
+        font-size:19px;
+    }
+    .seat-info-text{
+        padding-left:16px;
+    }
+}

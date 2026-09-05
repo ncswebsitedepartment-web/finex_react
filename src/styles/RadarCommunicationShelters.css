@@ -1,0 +1,1557 @@
+/* ==========================================================
+   FINEX RADAR & COMMUNICATION SHELTERS
+   Engineering / Defence Systems Specification Theme
+========================================================== */
+
+:root {
+  --radar-navy: #071b2f;
+  --radar-blue: #123b5d;
+  --radar-blue-light: #285d83;
+
+  --radar-gold: #c59a52;
+  --radar-gold-light: #e3c47b;
+  --radar-gold-bg: #fff8e9;
+
+  --radar-bg: #f4f6f8;
+  --radar-white: #ffffff;
+
+  --radar-text: #52606d;
+  --radar-heading: #111827;
+  --radar-border: #e2e7ec;
+
+  --radar-green: #287653;
+
+  --radar-shadow:
+    0 12px 35px rgba(7, 27, 47, 0.07);
+}
+
+
+/* ==========================================================
+   MAIN
+========================================================== */
+
+.radar-service-content {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+  padding: 0 0 30px;
+  font-family: "Poppins", sans-serif;
+  color: var(--radar-text);
+}
+
+
+/* ==========================================================
+   STATS
+========================================================== */
+
+.radar-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-bottom:  16px;
+
+  background: var(--radar-white);
+
+  border: 1px solid var(--radar-border);
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  box-shadow: var(--radar-shadow);
+}
+
+
+.radar-stat-card {
+  position: relative;
+
+  min-height: 120px;
+
+  padding: 14px 20px;
+
+  border-right: 1px solid var(--radar-border);
+
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #fafbfc
+  );
+}
+
+
+.radar-stat-card:last-child {
+  border-right: none;
+}
+
+
+.radar-stat-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: linear-gradient(
+    90deg,
+    var(--radar-gold),
+    var(--radar-gold-light)
+  );
+}
+
+
+.radar-stat-card span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-family: monospace;
+
+  color: var(--radar-gold);
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+
+.radar-stat-card h2 {
+  margin: 0 0 5px;
+
+  color: var(--radar-navy);
+
+  font-size: 24px;
+
+  font-weight: 700;
+}
+
+
+.radar-stat-card p {
+  margin: 0;
+
+  color: #697586;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  font-weight: 600;
+}
+
+
+/* ==========================================================
+   COMMON INFO BOX
+========================================================== */
+
+.radar-info-box {
+  position: relative;
+
+  margin-bottom: 28px;
+
+  padding: 18px;
+
+  background: var(--radar-white);
+
+  border: 1px solid var(--radar-border);
+
+  border-radius: 12px;
+
+  box-shadow: var(--radar-shadow);
+
+  overflow: hidden;
+}
+
+
+.radar-info-box::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    var(--radar-gold),
+    var(--radar-gold-light),
+    transparent
+  );
+}
+
+
+.radar-info-box h2 {
+  margin: 12px 0 30px;
+
+  color: var(--radar-heading);
+
+  font-size: 31px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+}
+
+
+.radar-section-tag {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 7px 14px;
+
+  background: var(--radar-gold-bg);
+
+  border: 1px solid #ead4aa;
+
+  border-radius: 30px;
+
+  color: #946d32;
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 1.6px;
+
+  font-weight: 600;
+}
+
+
+.radar-section-tag::before {
+  content: "";
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--radar-gold);
+
+  box-shadow:
+    0 0 0 3px rgba(197, 154, 82, 0.12);
+}
+
+
+/* ==========================================================
+   PRODUCT OVERVIEW
+========================================================== */
+
+.radar-overview {
+  padding: 25px;
+}
+
+
+.radar-section-heading {
+  position: relative;
+
+  max-width: 850px;
+
+  margin-bottom: 20px;
+}
+
+
+.radar-section-heading h2 {
+  margin-bottom: 0;
+
+  font-size: 38px;
+}
+
+
+.radar-section-heading h2 span {
+  color: var(--radar-gold);
+}
+
+
+.radar-overview-content {
+  display: grid;
+
+  grid-template-columns: 4px 1fr;
+
+  gap: 22px;
+
+  max-width: 950px;
+}
+
+
+.radar-overview-line {
+  width: 4px;
+
+  background: linear-gradient(
+    180deg,
+    var(--radar-gold),
+    rgba(197, 154, 82, 0.15)
+  );
+
+  border-radius: 4px;
+}
+
+
+.radar-overview-content p {
+  grid-column: 2;
+
+  margin: 0;
+
+  color: #56616d;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+}
+
+
+.radar-overview-content p + p {
+  margin-top: 5px;
+}
+
+
+/* ==========================================================
+   TITLE ROW
+========================================================== */
+
+.radar-title-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 20px;
+
+  margin-bottom: 15px;
+}
+
+
+.radar-title-row h2 {
+  margin-bottom: 0;
+}
+
+
+.radar-title-code {
+  color: #9aa5b1;
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* ==========================================================
+   KEY FEATURES
+========================================================== */
+
+.radar-feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+
+.radar-feature-card {
+  position: relative;
+
+  min-height: 215px;
+
+  padding: 15px;
+
+  background: #fbfcfd;
+
+  border: 1px solid var(--radar-border);
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.radar-feature-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #d7b66f;
+
+  box-shadow:
+    0 18px 40px rgba(7, 27, 47, 0.1);
+}
+
+
+.radar-feature-number {
+  position: absolute;
+
+  top: 18px;
+  right: 20px;
+
+  color: #cdd4dc;
+
+  font-family: monospace;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+}
+
+
+.radar-feature-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 45px;
+  height: 45px;
+
+  margin-bottom: 10px;
+
+  background: var(--radar-navy);
+
+  color: var(--radar-gold);
+
+  border-radius: 7px;
+
+  font-size: 20px;
+}
+
+
+.radar-feature-card h3 {
+  margin: 0 0 10px;
+
+  color: var(--radar-heading);
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+
+.radar-feature-card p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 13px;
+
+  line-height: 1.75;
+}
+
+
+/* ==========================================================
+   PRODUCT VARIANTS
+========================================================== */
+
+.radar-variant-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+
+.radar-variant-card {
+  display: grid;
+
+  grid-template-columns: 55px 1fr;
+
+  gap: 18px;
+
+  padding: 13px;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--radar-border);
+
+  border-radius: 9px;
+
+  transition: 0.3s ease;
+}
+
+
+.radar-variant-card:hover {
+  background: #fffdf8;
+
+  border-color: #d9bd7e;
+
+  transform: translateY(-4px);
+}
+
+
+.radar-variant-number {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: var(--radar-navy);
+
+  color: var(--radar-gold);
+
+  font-family: monospace;
+
+  font-size: 11px;
+}
+
+
+.radar-variant-card h3 {
+  margin: 0 0 8px;
+
+  color: var(--radar-heading);
+
+  font-size: 17px;
+}
+
+
+.radar-variant-card p {
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.75;
+
+  color: #687482;
+}
+
+
+/* ==========================================================
+   TECHNICAL TABLE
+========================================================== */
+
+.radar-table-wrapper {
+  overflow-x: auto;
+
+  border: 1px solid var(--radar-border);
+
+  border-radius: 7px;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.radar-table-wrapper table {
+  width: 100%;
+
+  min-width: 650px;
+
+  border-collapse: collapse;
+}
+
+
+.radar-table-wrapper thead {
+  background: var(--radar-navy);
+}
+
+
+.radar-table-wrapper th {
+  padding: 10px 20px;
+
+  color: white;
+
+  text-align: left;
+
+  font-family: monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+}
+
+
+.radar-table-wrapper td {
+  padding: 10px 20px;
+
+  border-bottom: 1px solid var(--radar-border);
+
+  color: #596573;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+.radar-table-wrapper td:first-child {
+  width: 34%;
+
+  color: var(--radar-heading);
+
+  font-weight: 700;
+}
+
+
+.radar-table-wrapper tbody tr:nth-child(even) {
+  background: #fafbfc;
+}
+
+
+.radar-table-wrapper tbody tr:hover {
+  background: #fff8e9;
+}
+
+
+/* ==========================================================
+   DARK EMI SECTION
+========================================================== */
+
+.radar-dark-section {
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(197, 154, 82, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #071b2f,
+      #102e49
+    );
+
+  border-color: #173b5b;
+
+  color: white;
+}
+
+
+.radar-dark-section::before {
+  background: linear-gradient(
+    90deg,
+    var(--radar-gold),
+    transparent
+  );
+}
+
+
+.radar-dark-heading {
+  max-width: 800px;
+
+  margin-bottom: 15px;
+}
+
+
+.radar-dark-heading h2 {
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+
+.radar-dark-heading h2 span {
+  color: var(--radar-gold);
+}
+
+
+.radar-dark-heading p {
+  margin: 0;
+
+  color: #b9c7d3;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+.radar-technical-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 1px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.radar-technical-card {
+  min-height: 190px;
+
+  padding: 15px;
+
+  background: rgba(5, 20, 35, 0.75);
+}
+
+
+.radar-technical-card > span {
+  color: var(--radar-gold);
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+
+.radar-technical-card h3 {
+  margin: 22px 0 10px;
+
+  color: white;
+
+  font-size: 15px;
+}
+
+
+.radar-technical-card p {
+  margin: 0;
+
+  color: #aebdca;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   POWER / THERMAL
+========================================================== */
+
+.radar-section-description {
+  max-width: 800px;
+
+  margin: -10px 0 30px;
+
+  color: #667085;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+.radar-power-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+}
+
+
+.radar-power-card {
+  display: grid;
+
+  grid-template-columns: 50px 1fr;
+
+  gap: 15px;
+
+  padding: 20px;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--radar-border);
+
+  border-radius: 8px;
+}
+
+
+.radar-power-index {
+  color: var(--radar-gold);
+
+  font-family: monospace;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+.radar-power-card h3 {
+  margin: 0 0 7px;
+
+  color: var(--radar-heading);
+
+  font-size: 15px;
+}
+
+
+.radar-power-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 12.5px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   SPLIT SECTION
+========================================================== */
+
+.radar-split-section {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 55px;
+
+  align-items: start;
+}
+
+
+.radar-split-heading h2 {
+  margin-bottom: 15px;
+}
+
+
+.radar-split-heading p {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: #687482;
+}
+
+
+.radar-check-list {
+  display: grid;
+
+  gap: 12px;
+}
+
+
+.radar-check-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  padding: 10px 15px;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--radar-border);
+
+  border-radius: 7px;
+}
+
+
+.radar-check-item span {
+  flex-shrink: 0;
+
+  color: var(--radar-green);
+
+  font-weight: 700;
+}
+
+
+.radar-check-item p {
+  margin: 0;
+
+  color: #56616d;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* ==========================================================
+   COMMUNICATION SUPPORT
+========================================================== */
+
+.radar-communication-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+}
+
+
+.radar-communication-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 17px 20px;
+
+  border: 1px solid var(--radar-border);
+
+  background: #fafbfc;
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+
+.radar-communication-card:hover {
+  background: #fffaf0;
+
+  border-color: #d8ba74;
+}
+
+
+.radar-communication-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 35px;
+  height: 35px;
+
+  border-radius: 5px;
+
+  background: var(--radar-navy);
+
+  color: var(--radar-gold);
+}
+
+
+.radar-communication-card p {
+  margin: 0;
+
+  color: #596573;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* ==========================================================
+   WORKSPACE
+========================================================== */
+.radar-workspace-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+}
+
+.radar-workspace-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+  padding: 20px;
+  background: #fafbfc;
+  border: 1px solid var(--radar-border);
+  border-radius: 9px;
+  box-sizing: border-box;
+}
+
+.radar-workspace-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  background: var(--radar-navy);
+  color: var(--radar-gold);
+  border-radius: 6px;
+}
+
+.radar-workspace-card > div:last-child {
+  min-width: 0;
+  width: 100%;
+}
+
+.radar-workspace-number {
+  display: block;
+  color: #b2bbc5;
+  font-family: monospace;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.radar-workspace-card h3 {
+  margin: 7px 0 8px;
+  color: var(--radar-heading);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.radar-workspace-card p {
+  margin: 0;
+  color: #687482;
+  font-size: 12px;
+  line-height: 1.7;
+}
+/* ==========================================================
+   DEPLOYMENT
+========================================================== */
+
+.radar-deployment-section {
+  background:
+    linear-gradient(
+      135deg,
+      #faf8f3,
+      #ffffff
+    );
+}
+
+
+.radar-deployment-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+}
+
+
+.radar-deployment-card {
+  position: relative;
+
+  padding: 24px;
+
+  min-height: 150px;
+
+  background: white;
+
+  border: 1px solid #e5e1d8;
+
+  border-radius: 9px;
+}
+
+
+.radar-deployment-card > span {
+  color: var(--radar-gold);
+
+  font-family: monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+}
+
+
+.radar-deployment-card h3 {
+  margin: 24px 0 9px;
+
+  color: var(--radar-heading);
+
+  font-size: 18px;
+}
+
+
+.radar-deployment-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   STANDARDS
+========================================================== */
+
+.radar-standards-section {
+  background:
+    linear-gradient(
+      135deg,
+      #f8fafc,
+      #ffffff
+    );
+}
+
+
+.radar-standards-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+
+.radar-standard-card {
+  padding: 24px;
+
+  background: white;
+
+  border: 1px solid var(--radar-border);
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 8px 25px rgba(7, 27, 47, 0.05);
+
+  transition: 0.3s ease;
+}
+
+
+.radar-standard-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #d8b66e;
+}
+
+
+.radar-standard-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 22px;
+}
+
+
+.radar-standard-top svg {
+  color: var(--radar-gold);
+
+  font-size: 23px;
+}
+
+
+.radar-standard-top span {
+  color: #b5bec8;
+
+  font-family: monospace;
+
+  font-size: 10px;
+}
+
+
+.radar-standard-card h3 {
+  margin: 0 0 9px;
+
+  color: var(--radar-heading);
+
+  font-size: 16px;
+}
+
+
+.radar-standard-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   CUSTOMIZATION
+========================================================== */
+
+.radar-customization {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 55px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071b2f,
+      #123b5d
+    );
+
+  border-color: #183e5d;
+
+  color: white;
+}
+
+
+.radar-customization::before {
+  background: linear-gradient(
+    90deg,
+    var(--radar-gold),
+    transparent
+  );
+}
+
+
+.radar-customization-heading h2 {
+  color: white;
+
+  margin-bottom: 15px;
+}
+
+
+.radar-customization-heading p {
+  margin: 0;
+
+  color: #b9c8d5;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+.radar-customization-list {
+  display: grid;
+
+  gap: 10px;
+}
+
+
+.radar-custom-item {
+  display: grid;
+
+  grid-template-columns: 35px 1fr;
+
+  gap: 12px;
+
+  align-items: center;
+
+  padding: 12px 15px;
+
+  background: rgba(255, 255, 255, 0.045);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 6px;
+}
+
+
+.radar-custom-item > span {
+  color: var(--radar-gold);
+
+  font-family: monospace;
+
+  font-size: 10px;
+}
+
+
+.radar-custom-item p {
+  margin: 0;
+
+  color: #d1dce5;
+
+  font-size: 12.5px;
+
+  line-height: 1.5;
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.radar-product-footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 40px;
+
+  margin-top: 40px;
+
+  padding: 45px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #091c2e,
+      #102f49
+    );
+
+  border-radius: 10px;
+
+  color: white;
+
+  box-shadow:
+    0 20px 50px rgba(7, 27, 47, 0.16);
+}
+
+
+.radar-product-footer > div:first-child {
+  max-width: 750px;
+}
+
+
+.radar-product-footer > div:first-child > span {
+  color: var(--radar-gold);
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+
+.radar-product-footer h2 {
+  margin: 15px 0;
+
+  color: white;
+
+  font-size: 30px;
+
+  line-height: 1.3;
+}
+
+
+.radar-product-footer h2 strong {
+  color: var(--radar-gold);
+}
+
+
+.radar-product-footer p {
+  margin: 0;
+
+  color: #b8c7d4;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+.radar-footer-code {
+  padding: 10px;
+
+  border-left: 1px solid rgba(255,255,255,0.15);
+
+  color: #8da0b2;
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  line-height: 1.8;
+
+  letter-spacing: 2px;
+
+  text-align: right;
+}
+
+
+/* ==========================================================
+   RESPONSIVE — 1100px
+========================================================== */
+
+@media (max-width: 1100px) {
+
+  .radar-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .radar-technical-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .radar-workspace-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .radar-deployment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .radar-standards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE — 900px
+========================================================== */
+
+@media (max-width: 900px) {
+
+  .radar-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .radar-stat-card:nth-child(2) {
+    border-right: none;
+  }
+
+  .radar-stat-card {
+    border-bottom: 1px solid var(--radar-border);
+  }
+
+  .radar-split-section,
+  .radar-customization {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .radar-technical-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE — 700px
+========================================================== */
+
+@media (max-width: 700px) {
+
+  .radar-service-content {
+    width: 94%;
+  }
+
+  .radar-info-box {
+    padding: 28px 22px;
+  }
+
+  .radar-overview {
+    padding: 30px 24px;
+  }
+
+  .radar-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .radar-info-box h2 {
+    font-size: 27px;
+  }
+
+  .radar-feature-grid,
+  .radar-variant-grid,
+  .radar-power-grid,
+  .radar-communication-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-workspace-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .radar-deployment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-standards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-title-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .radar-product-footer {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 30px;
+  }
+
+  .radar-footer-code {
+    border-left: none;
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    width: 100%;
+
+    padding-left: 0;
+
+    padding-top: 18px;
+
+    text-align: left;
+  }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE — 500px
+========================================================== */
+
+@media (max-width: 500px) {
+
+  .radar-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-stat-card {
+    border-right: none;
+  }
+
+  .radar-feature-grid,
+  .radar-technical-grid,
+  .radar-workspace-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-feature-card {
+    min-height: auto;
+  }
+
+  .radar-section-heading h2 {
+    font-size: 26px;
+  }
+
+  .radar-info-box h2 {
+    font-size: 24px;
+  }
+
+  .radar-overview-content {
+    grid-template-columns: 3px 1fr;
+  }
+
+  .radar-overview-content p {
+    font-size: 14px;
+  }
+
+  .radar-product-footer h2 {
+    font-size: 24px;
+  }
+
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .radar-feature-card,
+  .radar-variant-card,
+  .radar-communication-card,
+  .radar-standard-card {
+    transition: none;
+  }
+
+}

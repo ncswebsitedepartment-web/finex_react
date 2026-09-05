@@ -1,0 +1,1818 @@
+/* ==========================================================
+   FINEX EMI / EMC SHELTERS
+   Engineering / Defence Systems Specification Theme
+========================================================== */
+
+:root {
+  --emi-navy: #071b2f;
+  --emi-blue: #123b5d;
+  --emi-blue-light: #285d83;
+
+  --emi-gold: #c59a52;
+  --emi-gold-light: #e3c47b;
+  --emi-gold-bg: #fff8e9;
+
+  --emi-white: #ffffff;
+  --emi-bg: #f4f6f8;
+
+  --emi-text: #52606d;
+  --emi-heading: #111827;
+  --emi-border: #e2e7ec;
+
+  --emi-green: #287653;
+
+  --emi-shadow: 0 12px 35px rgba(7, 27, 47, 0.07);
+}
+
+
+/* ==========================================================
+   MAIN
+========================================================== */
+
+.emi-service-content {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+  padding: 0 0 60px;
+  font-family: "Poppins", sans-serif;
+  color: var(--emi-text);
+}
+
+
+/* ==========================================================
+   STATS
+========================================================== */
+
+.emi-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 36px;
+  background: white;
+  border: 1px solid var(--emi-border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--emi-shadow);
+}
+
+.emi-stat-card {
+  position: relative;
+  min-height: 120px;
+  padding: 24px 26px;
+  border-right: 1px solid var(--emi-border);
+  background: linear-gradient(135deg, #ffffff, #fafbfc);
+}
+
+.emi-stat-card:last-child {
+  border-right: none;
+}
+
+.emi-stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+
+  background: linear-gradient(
+    90deg,
+    var(--emi-gold),
+    var(--emi-gold-light)
+  );
+}
+
+.emi-stat-card span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--emi-gold);
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.emi-stat-card h2 {
+  margin: 0 0 5px;
+  color: var(--emi-navy);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.emi-stat-card p {
+  margin: 0;
+  color: #697586;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+
+/* ==========================================================
+   COMMON INFO BOX
+========================================================== */
+
+.emi-info-box {
+  position: relative;
+  margin-bottom: 28px;
+  padding: 38px;
+
+  background: white;
+
+  border: 1px solid var(--emi-border);
+  border-radius: 12px;
+
+  box-shadow: var(--emi-shadow);
+
+  overflow: hidden;
+}
+
+.emi-info-box::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    var(--emi-gold),
+    var(--emi-gold-light),
+    transparent
+  );
+}
+
+.emi-info-box h2 {
+  margin: 12px 0 30px;
+
+  color: var(--emi-heading);
+
+  font-size: 31px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+
+/* ==========================================================
+   SECTION TAG
+========================================================== */
+
+.emi-section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 7px 14px;
+
+  background: var(--emi-gold-bg);
+
+  border: 1px solid #ead4aa;
+  border-radius: 30px;
+
+  color: #946d32;
+
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 1.6px;
+  font-weight: 600;
+}
+
+.emi-section-tag::before {
+  content: "";
+
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: var(--emi-gold);
+
+  box-shadow:
+    0 0 0 3px rgba(197, 154, 82, 0.12);
+}
+
+
+/* ==========================================================
+   OVERVIEW
+========================================================== */
+
+.emi-overview {
+  padding: 45px;
+}
+
+.emi-section-heading {
+  max-width: 850px;
+  margin-bottom: 35px;
+}
+
+.emi-section-heading h2 {
+  margin-bottom: 0;
+  font-size: 38px;
+}
+
+.emi-section-heading h2 span {
+  color: var(--emi-gold);
+}
+
+.emi-overview-content {
+  display: grid;
+
+  grid-template-columns: 4px 1fr;
+
+  gap: 22px;
+
+  max-width: 950px;
+}
+
+.emi-overview-line {
+  width: 4px;
+
+  background: linear-gradient(
+    180deg,
+    var(--emi-gold),
+    rgba(197, 154, 82, 0.15)
+  );
+
+  border-radius: 4px;
+}
+
+.emi-overview-content p {
+  grid-column: 2;
+
+  margin: 0;
+
+  color: #56616d;
+
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.emi-overview-content p + p {
+  margin-top: 5px;
+}
+
+
+/* ==========================================================
+   TITLE ROW
+========================================================== */
+
+.emi-title-row {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 20px;
+
+  margin-bottom: 35px;
+}
+
+.emi-title-row h2 {
+  margin-bottom: 0;
+}
+
+.emi-title-code {
+  color: #9aa5b1;
+
+  font-family: monospace;
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* ==========================================================
+   KEY FEATURES
+========================================================== */
+
+.emi-feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.emi-feature-card {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 280px;
+
+  padding: 28px 22px;
+
+  text-align: center;
+
+  background: #fbfcfd;
+
+  border: 1px solid var(--emi-border);
+  border-radius: 10px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.emi-feature-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #d7b66f;
+
+  box-shadow:
+    0 18px 40px rgba(7, 27, 47, 0.1);
+}
+
+.emi-feature-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  height: 64px;
+
+  margin-bottom: 18px;
+
+  background: var(--emi-navy);
+  color: var(--emi-gold);
+
+  border-radius: 10px;
+
+  font-size: 27px;
+
+  box-shadow:
+    0 8px 20px rgba(7, 27, 47, 0.12);
+}
+
+.emi-feature-content {
+  width: 100%;
+  min-width: 0;
+}
+
+.emi-card-number {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #b5bec8;
+
+  font-family: monospace;
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.emi-feature-card h3 {
+  margin: 0 0 10px;
+
+  color: var(--emi-heading);
+
+  font-size: 15px;
+  line-height: 1.4;
+
+  text-align: left;
+}
+
+.emi-feature-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  text-align: left;
+}
+
+
+/* ==========================================================
+   APPLICATIONS
+========================================================== */
+
+.emi-application-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.emi-application-card {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 230px;
+
+  padding: 25px 20px;
+
+  text-align: center;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--emi-border);
+  border-radius: 9px;
+
+  transition: 0.3s ease;
+}
+
+.emi-application-card:hover {
+  background: #fffaf0;
+
+  border-color: #d8ba74;
+
+  transform: translateY(-5px);
+}
+
+.emi-side-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 56px;
+  height: 56px;
+
+  margin-bottom: 17px;
+
+  background: var(--emi-navy);
+  color: var(--emi-gold);
+
+  border-radius: 9px;
+
+  font-size: 22px;
+
+  box-shadow:
+    0 7px 18px rgba(7, 27, 47, 0.1);
+}
+
+.emi-application-card > div:last-child {
+  width: 100%;
+  min-width: 0;
+}
+
+.emi-application-card span {
+  color: #b2bbc5;
+
+  font-family: monospace;
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.emi-application-card h3 {
+  margin: 6px 0 7px;
+
+  color: var(--emi-heading);
+
+  font-size: 18px;
+  line-height: 1.4;
+
+  text-align: left;
+}
+
+.emi-application-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 14px;
+  line-height: 1.65;
+
+  text-align: left;
+}
+
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+.emi-table-wrapper {
+  overflow-x: auto;
+
+  border: 1px solid var(--emi-border);
+
+  border-radius: 7px;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.emi-table-wrapper table {
+  width: 100%;
+
+  min-width: 650px;
+
+  border-collapse: collapse;
+}
+
+.emi-table-wrapper thead {
+  background: var(--emi-navy);
+}
+
+.emi-table-wrapper th {
+  padding: 16px 20px;
+
+  color: white;
+
+  text-align: left;
+
+  font-family: monospace;
+  font-size: 11px;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+}
+
+.emi-table-wrapper td {
+  padding: 16px 20px;
+
+  border-bottom: 1px solid var(--emi-border);
+
+  color: #596573;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.emi-table-wrapper td:first-child {
+  width: 34%;
+
+  color: var(--emi-heading);
+
+  font-weight: 700;
+}
+
+.emi-table-wrapper tbody tr:nth-child(even) {
+  background: #fafbfc;
+}
+
+.emi-table-wrapper tbody tr:hover {
+  background: #fff8e9;
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.emi-section-description {
+  max-width: 800px;
+
+  margin: -10px 0 30px;
+
+  color: #667085;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   TESTING CHAMBER
+========================================================== */
+
+.emi-item-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.emi-item-card {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 230px;
+
+  padding: 25px 20px;
+
+  text-align: center;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--emi-border);
+  border-radius: 9px;
+
+  transition: 0.3s ease;
+}
+
+.emi-item-card:hover {
+  background: #fffaf0;
+
+  border-color: #d8ba74;
+
+  transform: translateY(-5px);
+}
+
+.emi-item-card > div:last-child {
+  width: 100%;
+  min-width: 0;
+}
+
+.emi-item-number {
+  color: #b2bbc5;
+
+  font-family: monospace;
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.emi-item-card h3 {
+  margin: 6px 0 7px;
+
+  color: var(--emi-heading);
+
+  font-size: 18px;
+  line-height: 1.4;
+
+  text-align: left;
+}
+
+.emi-item-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  text-align: left;
+}
+
+
+/* ==========================================================
+   DARK SECTION
+========================================================== */
+
+.emi-dark-section {
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(197, 154, 82, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #071b2f,
+      #102e49
+    );
+
+  border-color: #173b5b;
+
+  color: white;
+}
+
+.emi-dark-section::before {
+  background:
+    linear-gradient(
+      90deg,
+      var(--emi-gold),
+      transparent
+    );
+}
+
+.emi-dark-heading {
+  max-width: 800px;
+
+  margin-bottom: 35px;
+}
+
+.emi-dark-heading h2 {
+  color: white;
+
+  margin-bottom: 15px;
+}
+
+.emi-dark-heading h2 span {
+  color: var(--emi-gold);
+}
+
+.emi-dark-heading p {
+  margin: 0;
+
+  color: #b9c7d3;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   DARK GRID
+========================================================== */
+
+.emi-dark-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.emi-dark-card {
+  min-height: 220px;
+
+  padding: 25px;
+
+  text-align: center;
+
+  background: rgba(5, 20, 35, 0.75);
+
+  transition: 0.3s ease;
+}
+
+.emi-dark-card:hover {
+  background: rgba(197, 154, 82, 0.08);
+}
+
+.emi-dark-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 17px;
+
+  background: rgba(197, 154, 82, 0.12);
+
+  color: var(--emi-gold);
+
+  border: 1px solid rgba(197, 154, 82, 0.25);
+
+  border-radius: 8px;
+
+  font-size: 22px;
+}
+
+.emi-dark-card > span {
+  color: var(--emi-gold);
+
+  font-family: monospace;
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+.emi-dark-card h3 {
+  margin: 10px 0 8px;
+
+  color: white;
+
+  font-size: 15px;
+  line-height: 1.4;
+
+  text-align: left;
+}
+
+.emi-dark-card p {
+  margin: 0;
+
+  color: #aebdca;
+
+  font-size: 12px;
+  line-height: 1.7;
+
+  text-align: left;
+}
+
+
+/* ==========================================================
+   FOUR COLUMN SMALL CARDS
+========================================================== */
+
+.emi-four-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+}
+
+.emi-small-card {
+  position: relative;
+
+  min-height: 150px;
+
+  padding: 22px;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--emi-border);
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.emi-small-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d8ba74;
+
+  background: #fffaf0;
+}
+
+.emi-small-card > span {
+  color: var(--emi-gold);
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+.emi-small-card h3 {
+  margin: 20px 0 8px;
+
+  color: var(--emi-heading);
+
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.emi-small-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   POWER
+========================================================== */
+
+.emi-power-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+}
+
+.emi-power-card {
+  display: grid;
+
+  grid-template-columns: 45px 1fr;
+
+  gap: 15px;
+
+  padding: 20px;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--emi-border);
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.emi-power-card:hover {
+  border-color: #d8ba74;
+
+  background: #fffdf8;
+}
+
+.emi-power-index {
+  color: var(--emi-gold);
+
+  font-family: monospace;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.emi-power-card h3 {
+  margin: 0 0 7px;
+
+  color: var(--emi-heading);
+
+  font-size: 15px;
+}
+
+.emi-power-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   STANDARDS
+========================================================== */
+
+.emi-standards-section {
+  background:
+    linear-gradient(
+      135deg,
+      #f8fafc,
+      #ffffff
+    );
+}
+
+.emi-standards-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.emi-standard-card {
+  padding: 25px;
+
+  background: white;
+
+  border: 1px solid var(--emi-border);
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 8px 25px rgba(7, 27, 47, 0.05);
+
+  transition: 0.3s ease;
+}
+
+.emi-standard-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #d8b66e;
+}
+
+.emi-standard-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 55px;
+  height: 55px;
+
+  margin-bottom: 15px;
+
+  background: var(--emi-navy);
+
+  color: var(--emi-gold);
+
+  border-radius: 8px;
+
+  font-size: 22px;
+}
+
+.emi-standard-number {
+  margin-bottom: 9px;
+
+  color: #b5bec8;
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+}
+
+.emi-standard-card h3 {
+  margin: 0 0 9px;
+
+  color: var(--emi-heading);
+
+  font-size: 16px;
+}
+
+.emi-standard-card p {
+  margin: 0;
+
+  color: #687482;
+
+  font-size: 12.5px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   SUPPORT SERVICES
+========================================================== */
+
+.emi-split-section {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 55px;
+
+  align-items: start;
+}
+
+.emi-check-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+}
+
+.emi-check-item {
+  display: grid;
+
+  grid-template-columns: 30px 20px 1fr;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 13px 15px;
+
+  background: #fafbfc;
+
+  border: 1px solid var(--emi-border);
+
+  border-radius: 7px;
+}
+
+.emi-check-item > span {
+  color: var(--emi-gold);
+
+  font-family: monospace;
+
+  font-size: 9px;
+}
+
+.emi-check-item svg {
+  color: var(--emi-green);
+
+  font-size: 14px;
+}
+
+.emi-check-item p {
+  margin: 0;
+
+  color: #56616d;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* ==========================================================
+   CUSTOMIZATION
+========================================================== */
+
+.emi-customization {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 55px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071b2f,
+      #123b5d
+    );
+
+  border-color: #183e5d;
+
+  color: white;
+}
+
+.emi-customization::before {
+  background:
+    linear-gradient(
+      90deg,
+      var(--emi-gold),
+      transparent
+    );
+}
+
+.emi-customization-heading h2 {
+  color: white;
+
+  margin-bottom: 15px;
+}
+
+.emi-customization-heading p {
+  margin: 0;
+
+  color: #b9c8d5;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.emi-customization-list {
+  display: grid;
+
+  gap: 10px;
+}
+
+.emi-custom-item {
+  display: grid;
+
+  grid-template-columns: 35px 1fr;
+
+  gap: 12px;
+
+  align-items: center;
+
+  padding: 12px 15px;
+
+  background: rgba(255, 255, 255, 0.045);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 6px;
+}
+
+.emi-custom-item > span {
+  color: var(--emi-gold);
+
+  font-family: monospace;
+
+  font-size: 10px;
+}
+
+.emi-custom-item p {
+  margin: 0;
+
+  color: #d1dce5;
+
+  font-size: 12.5px;
+
+  line-height: 1.5;
+}
+
+
+/* ==========================================================
+   GALLERY
+========================================================== */
+
+.emi-gallery-section {
+  padding: 42px;
+}
+
+.emi-gallery-header {
+  max-width: 850px;
+
+  margin-bottom: 35px;
+}
+
+.emi-gallery-header h2 {
+  margin: 15px 0 12px;
+
+  color: var(--emi-heading);
+
+  font-size: 36px;
+
+  line-height: 1.2;
+}
+
+.emi-gallery-header h2 span {
+  color: var(--emi-gold);
+}
+
+.emi-gallery-header p {
+  max-width: 800px;
+
+  margin: 0;
+
+  color: #667482;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   GALLERY GRID
+========================================================== */
+
+.emi-gallery-grid {
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+
+  grid-template-rows: repeat(2, 250px);
+
+  gap: 16px;
+}
+
+
+/* ==========================================================
+   GALLERY CARD
+========================================================== */
+
+.emi-gallery-card {
+  position: relative;
+
+  overflow: hidden;
+
+  background: var(--emi-navy);
+
+  border-radius: 10px;
+
+  border: 1px solid var(--emi-border);
+
+  box-shadow:
+    0 10px 30px rgba(7, 27, 47, 0.08);
+
+  cursor: pointer;
+}
+
+
+/* First large image */
+
+.emi-gallery-1 {
+  grid-column: span 7;
+
+  grid-row: span 2;
+}
+
+
+/* Second */
+
+.emi-gallery-2 {
+  grid-column: span 5;
+}
+
+
+/* Third */
+
+.emi-gallery-3 {
+  grid-column: span 5;
+}
+
+
+/* Fourth */
+
+.emi-gallery-4 {
+  grid-column: span 4;
+}
+
+
+/* Fifth */
+
+.emi-gallery-5 {
+  grid-column: span 8;
+}
+
+
+/* ==========================================================
+   GALLERY IMAGE
+========================================================== */
+
+.emi-gallery-card img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.7s ease,
+    filter 0.5s ease;
+}
+
+.emi-gallery-card:hover img {
+  transform: scale(1.08);
+
+  filter:
+    brightness(0.75)
+    saturate(1.08);
+}
+
+
+/* ==========================================================
+   GALLERY OVERLAY
+========================================================== */
+
+.emi-gallery-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  padding: 22px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 27, 47, 0.15),
+      transparent 35%,
+      rgba(7, 27, 47, 0.9) 100%
+    );
+
+  transition:
+    background 0.4s ease;
+}
+
+.emi-gallery-card:hover .emi-gallery-overlay {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 27, 47, 0.2),
+      transparent 25%,
+      rgba(7, 27, 47, 0.95) 100%
+    );
+}
+
+
+/* ==========================================================
+   GALLERY NUMBER
+========================================================== */
+
+.emi-gallery-number {
+  align-self: flex-start;
+
+  padding: 7px 10px;
+
+  color: var(--emi-gold);
+
+  background: rgba(7, 27, 47, 0.8);
+
+  border: 1px solid rgba(227, 196, 123, 0.35);
+
+  border-radius: 5px;
+
+  font-family: monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 1.5px;
+
+  backdrop-filter: blur(5px);
+}
+
+
+/* ==========================================================
+   GALLERY CONTENT
+========================================================== */
+
+.emi-gallery-content {
+  max-width: 90%;
+}
+
+.emi-gallery-content span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: var(--emi-gold-light);
+
+  font-family: monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+}
+
+.emi-gallery-content h3 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 18px;
+
+  line-height: 1.35;
+
+  font-weight: 600;
+}
+
+
+/* ==========================================================
+   GALLERY GOLD LINE
+========================================================== */
+
+.emi-gallery-card::after {
+  content: "";
+
+  position: absolute;
+
+  left: 22px;
+  bottom: 17px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: var(--emi-gold);
+
+  transition: width 0.4s ease;
+}
+
+.emi-gallery-card:hover::after {
+  width: 55px;
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.emi-product-footer {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 40px;
+
+  margin-top: 40px;
+
+  padding: 45px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #091c2e,
+      #102f49
+    );
+
+  border-radius: 10px;
+
+  color: white;
+
+  box-shadow:
+    0 20px 50px rgba(7, 27, 47, 0.16);
+}
+
+.emi-product-footer > div:first-child {
+  max-width: 750px;
+}
+
+.emi-product-footer > div:first-child > span {
+  color: var(--emi-gold);
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+.emi-product-footer h2 {
+  margin: 15px 0;
+
+  color: white;
+
+  font-size: 30px;
+
+  line-height: 1.3;
+}
+
+.emi-product-footer h2 strong {
+  color: var(--emi-gold);
+}
+
+.emi-product-footer p {
+  margin: 0;
+
+  color: #b8c7d4;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.emi-footer-code {
+  padding: 20px;
+
+  border-left:
+    1px solid rgba(255, 255, 255, 0.15);
+
+  color: #8da0b2;
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  line-height: 1.8;
+
+  letter-spacing: 2px;
+
+  text-align: right;
+}
+
+
+/* ==========================================================
+   RESPONSIVE — 1100px
+========================================================== */
+
+@media (max-width: 1100px) {
+
+  .emi-feature-grid,
+  .emi-application-grid,
+  .emi-item-grid,
+  .emi-dark-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .emi-four-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .emi-standards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  /* Gallery */
+
+  .emi-gallery-grid {
+    grid-template-rows: repeat(2, 220px);
+  }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE — 900px
+========================================================== */
+
+@media (max-width: 900px) {
+
+  .emi-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .emi-stat-card:nth-child(2) {
+    border-right: none;
+  }
+
+  .emi-stat-card {
+    border-bottom: 1px solid var(--emi-border);
+  }
+
+  .emi-split-section,
+  .emi-customization {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+
+  /* Gallery */
+
+  .emi-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-rows: repeat(3, 220px);
+  }
+
+  .emi-gallery-1 {
+    grid-column: span 2;
+
+    grid-row: span 1;
+  }
+
+  .emi-gallery-2,
+  .emi-gallery-3,
+  .emi-gallery-4,
+  .emi-gallery-5 {
+    grid-column: span 1;
+
+    grid-row: span 1;
+  }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE — 700px
+========================================================== */
+
+@media (max-width: 700px) {
+
+  .emi-service-content {
+    width: 94%;
+  }
+
+  .emi-info-box {
+    padding: 28px 22px;
+  }
+
+  .emi-overview {
+    padding: 30px 24px;
+  }
+
+  .emi-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .emi-info-box h2 {
+    font-size: 27px;
+  }
+
+  .emi-feature-grid,
+  .emi-application-grid,
+  .emi-item-grid,
+  .emi-dark-grid,
+  .emi-four-grid,
+  .emi-standards-grid,
+  .emi-power-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .emi-check-list {
+    grid-template-columns: 1fr;
+  }
+
+  .emi-title-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  /* Gallery */
+
+  .emi-gallery-section {
+    padding: 28px 22px;
+  }
+
+  .emi-gallery-header h2 {
+    font-size: 30px;
+  }
+
+  .emi-gallery-grid {
+    grid-template-columns: 1fr;
+
+    grid-template-rows: none;
+
+    gap: 14px;
+  }
+
+  .emi-gallery-1,
+  .emi-gallery-2,
+  .emi-gallery-3,
+  .emi-gallery-4,
+  .emi-gallery-5 {
+    grid-column: span 1;
+
+    grid-row: span 1;
+
+    height: 250px;
+  }
+
+  .emi-gallery-1 {
+    height: 300px;
+  }
+
+
+  .emi-product-footer {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 30px;
+  }
+
+  .emi-footer-code {
+    border-left: none;
+
+    border-top:
+      1px solid rgba(255, 255, 255, 0.15);
+
+    width: 100%;
+
+    padding-left: 0;
+
+    padding-top: 18px;
+
+    text-align: left;
+  }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE — 500px
+========================================================== */
+
+@media (max-width: 500px) {
+
+  .emi-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .emi-stat-card {
+    border-right: none;
+  }
+
+  .emi-feature-card,
+  .emi-application-card,
+  .emi-item-card {
+    padding: 22px 18px;
+  }
+
+  .emi-section-heading h2 {
+    font-size: 26px;
+  }
+
+  .emi-info-box h2 {
+    font-size: 24px;
+  }
+
+  .emi-overview-content {
+    grid-template-columns: 3px 1fr;
+  }
+
+  .emi-overview-content p {
+    font-size: 14px;
+  }
+
+
+  /* Gallery */
+
+  .emi-gallery-header h2 {
+    font-size: 26px;
+  }
+
+  .emi-gallery-header p {
+    font-size: 13px;
+  }
+
+  .emi-gallery-card {
+    height: 230px;
+  }
+
+  .emi-gallery-1 {
+    height: 270px;
+  }
+
+  .emi-gallery-overlay {
+    padding: 17px;
+  }
+
+  .emi-gallery-content h3 {
+    font-size: 16px;
+  }
+
+
+  .emi-product-footer h2 {
+    font-size: 24px;
+  }
+
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .emi-feature-card,
+  .emi-application-card,
+  .emi-item-card,
+  .emi-standard-card,
+  .emi-power-card,
+  .emi-small-card,
+  .emi-dark-card,
+  .emi-gallery-card img,
+  .emi-gallery-card::after {
+    transition: none;
+  }
+
+}

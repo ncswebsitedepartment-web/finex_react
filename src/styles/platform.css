@@ -1,0 +1,656 @@
+
+
+.platformgallery-section{
+
+
+    background:
+    linear-gradient(
+        135deg,
+        #faf8f3,
+        #ffffff
+    );
+
+
+    padding:80px 10px;
+
+    overflow:hidden;
+
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+
+.platformgallery-header{
+
+
+    max-width:850px;
+
+    margin-bottom:55px;
+
+
+}
+
+
+
+.platformgallery-tag{
+
+
+    display:inline-block;
+
+
+    color:#b48a45;
+
+
+    font-size:12px;
+
+
+    letter-spacing:4px;
+
+
+    font-weight:700;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.platformgallery-header h2{
+
+
+    font-size:44px;
+
+
+    line-height:1.2;
+
+
+    color:#151515;
+
+
+    margin:0 0 18px;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+.platformgallery-header h2 span{
+
+
+    color:#b48a45;
+
+
+}
+
+
+
+.platformgallery-header p{
+
+
+    max-width:700px;
+
+
+    color:#667085;
+
+
+    font-size:16px;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+/* ================= GRID ================= */
+
+
+.platformgallery-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+    repeat(12,1fr);
+
+
+    grid-auto-rows:250px;
+
+
+    gap:24px;
+
+
+}
+
+
+
+
+
+/* ================= CARD ================= */
+
+
+.platformgallery-card{
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+/* 
+    border-radius:22px; */
+
+
+    background:#111;
+
+
+    cursor:pointer;
+
+
+    box-shadow:
+
+
+    0 25px 60px rgba(0,0,0,.15);
+
+
+    transition:.5s ease;
+
+
+}
+
+
+
+
+.platformgallery-card:hover{
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+
+
+    0 35px 80px rgba(0,0,0,.25);
+
+
+}
+
+
+
+
+
+/* IMAGE */
+
+
+.platformgallery-card img{
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+
+    filter:
+    brightness(.72)
+    contrast(1.05);
+
+
+
+    transition:
+
+
+    transform .8s ease,
+    filter .5s ease;
+
+
+
+}
+
+
+
+
+.platformgallery-card:hover img{
+
+
+    transform:scale(1.12);
+
+
+
+    filter:
+    brightness(.9)
+    contrast(1.1);
+
+
+}
+
+
+
+
+
+
+/* ================= OVERLAY ================= */
+
+
+
+.platformgallery-overlay{
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    padding:32px;
+
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:flex-end;
+
+
+
+
+    /* background:
+
+
+    linear-gradient(
+
+        0deg,
+
+        rgba(0,0,0,.9),
+
+        transparent 70%
+
+    ); */
+
+
+
+}
+
+
+
+
+
+.platformgallery-number{
+
+
+    color:#d6a354;
+
+
+    font-size:12px;
+
+
+    letter-spacing:5px;
+
+
+    font-family:monospace;
+
+
+    margin-bottom:12px;
+
+
+
+}
+
+
+
+
+
+.platformgallery-overlay h3{
+
+
+    color:white;
+
+
+    font-size:20px;
+
+
+    line-height:1.25;
+
+
+    font-weight:700;
+
+
+    max-width:280px;
+
+
+    margin:0;
+
+
+
+}
+
+
+
+
+.platformgallery-link{
+
+
+    margin-top:15px;
+
+
+    color:#e0bb70;
+
+
+    font-size:14px;
+
+
+    opacity:0;
+
+
+    transform:translateY(15px);
+
+
+    transition:.4s ease;
+
+
+}
+
+
+
+
+
+.platformgallery-card:hover .platformgallery-link{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+
+
+
+
+
+/* ================= LAYOUT ================= */
+
+
+
+.platformgallery-1{
+
+
+    grid-column:
+    span 6;
+
+
+    grid-row:
+    span 2;
+
+
+}
+
+
+
+
+
+.platformgallery-2,
+.platformgallery-3{
+
+
+    grid-column:
+    span 6;
+
+
+
+}
+
+
+
+.platformgallery-4{
+
+
+    grid-column:
+    span 6;
+
+
+
+}
+
+
+
+.platformgallery-card:nth-child(n+5){
+
+
+    grid-column:
+    span 6;
+
+
+
+}
+
+
+
+
+
+/* ================= SIDEBAR SERVICE BOX ================= */
+
+
+/* .info-box{
+
+
+    background:white;
+
+
+
+
+
+} */
+
+
+
+.info-box h2{
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+
+/* CONSULTATION BOX */
+
+
+.consultation-box{
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #0c3769,
+
+        #246bb8
+
+    );
+
+
+    color:white;
+
+
+    /* border-radius:25px; */
+
+
+    padding:35px;
+
+
+}
+
+
+
+
+.consultation-box h3{
+
+
+    color:#ffd26a;
+
+
+    font-size:22px;
+
+
+}
+
+
+
+
+
+/* ================= TABLET ================= */
+
+
+@media(max-width:1000px){
+
+
+.platformgallery-section{
+
+
+    padding:55px 30px;
+
+
+}
+
+
+
+.platformgallery-grid{
+
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+
+    grid-auto-rows:230px;
+
+
+}
+
+
+
+.platformgallery-card,
+.platformgallery-1,
+.platformgallery-2,
+.platformgallery-3,
+.platformgallery-4,
+.platformgallery-card:nth-child(n+5){
+
+
+    grid-column:span 1;
+
+
+    grid-row:span 1;
+
+
+}
+
+
+
+}
+
+
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:600px){
+
+
+.platformgallery-section{
+
+
+padding:35px 20px;
+
+
+}
+
+
+
+.platformgallery-header h2{
+
+
+font-size:32px;
+
+
+}
+
+
+
+
+.platformgallery-grid{
+
+
+grid-template-columns:1fr;
+
+
+gap:18px;
+
+
+}
+
+
+
+
+.platformgallery-card{
+
+
+height:280px;
+
+
+}
+
+
+
+
+.platformgallery-overlay{
+
+
+padding:22px;
+
+
+}
+
+
+
+
+.platformgallery-overlay h3{
+
+
+font-size:21px;
+
+
+}
+
+
+
+}
